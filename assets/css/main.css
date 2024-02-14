@@ -14,6 +14,11 @@ Reset
     margin: 0;
     box-sizing: border-box;
   }
+
+  img, svg{
+    display: block;
+    max-width: 100%;
+  }
   
   *::after,
   *::before {
@@ -108,7 +113,6 @@ Reset
   
     /* background animation stuff */
     margin: auto;
-    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
     overflow: auto;
     background: linear-gradient(315deg, var(--color-primary) 3%, var(--color-primary) 38%, rgba(245,245,245,1) 68%, var(--color-secondary) 98%);
     animation: gradient 15s ease infinite;
@@ -370,7 +374,14 @@ Reset
     }
   
   }
-  
+  /* @media(min-width: 600px){
+    body{
+      min-height: 100vh;
+      display: grid;
+      place-items: center;
+    }
+  } */
+
   @media (max-width: 550px) {
   
     .section_layout {
