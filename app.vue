@@ -5,25 +5,111 @@
   <script src="assets/js/app.js" defer></script>
 </head> -->
 <template id="app">
-  <section class="section_container gap">
-    <div class="default section_layout">
-      <div class="rowLayout">
-        <div class="header"></div>
+  <main class="main">
+        <section class="intro">
+            <div class="container">
+                <p class="intro__text">Willkommen auf</p>
+                <!-- <h1 class="intro__title">Responsive layouts don’t<br>have to be a struggle</h1> -->
+                <img src="assets/img/LogoTransparent.png" alt="Namens Logo Transparent" >
+            </div>
+        </section>
 
-        <div class="content gap">
-          <div>
-            <h1>Hallo lieber Mensch!</h1>
-            <!-- {{data.email}} -->
-            <p>Willkommen auf meiner noch sehr spaerlichen Website, schoen hast du mich gefunden. Wie du moeglicherweise schon erkennst, ist die Seite noch im Aufbau.</p>
-            <p>Bitte nimm aber gerne mit mir kontakt auf: <a href="mailto:coaching@nicole-grieder.ch" target="_self"> coaching@nicole-grieder.ch</a></p>
-          </div>
+        <section class="section-two">
+            <div class="container">
+                <h2 class="section-title section-title--dark">News</h2>
+                <div class="row">
+                    <div class="col">
+                        <p>Lieber Mensch, vielen Dank für deine Zeit und dein Interesse, einen Blick auf meine Webseite zu werfen. Bitte sei noch etwas geduldig, sie ist noch im Aufbau. 
+                            Ich bin noch mit der finalen Programmierung beschäftigt, mute dir nun aber dennoch die ersten Inhalte zu.</p>
+                    </div>
+                    <div class="col">
+                        <p>Mittlerweilen sind die verschieden Formate des Coachings ersichtlich, sowie ein kleiner Beschreib von mir.</p>
+                        <!-- <button></button> -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-salespoints">
+            <div class="container">
+                <h2 class="section-title section-title--dark">Coaching Formate</h2>
+                <p class="section-paragraph--dark">Unterschiedliche Coaching Formate für unterschiedliche Bedürfnisse:</p>
+                <div class="salespoint row">
+                    <div class="salespoint__card">
+                        <h2 class="salespoint__card__title">Laser-Coaching</h2>
+                        <p>Ein Laser Coaching eignet sich für:
+                            <ul>
+                                <li>Personen die sehr wenig Zeit haben</li>
+                                <li>akute Fälle (z.B. Streit)</li>
+                                <li>klar umrissene Probleme (z.B. Gespräch mit Chef)</li>
+                            </ul>  
+                        </p>
+                    </div>
+                    <div class="salespoint__card">
+                        <h2 class="salespoint__card__title">Kompakt-Coaching</h2>
+                        <p>Für umfangreichere Themen, empfehle ich das Kompakt-Coaching. Es eignet sich beim Problemen, die mehr als eine Session brauchen. Und haben einen durchschnittlichen Umfang von 2-5 Sessions.
+                            Themen können unteranderem folgende sein:
+                            <ul>
+                                <li>Partnerschaftskrisen</li>
+                                <li>Lebenskrisen/Weggabelungen</li>
+                                <li>berufliche Klärungsprozesse</li>
+                                <li>Themen mit Kindern und Jugendlichen</li>
+                            </ul>
+                        </p>
+                    </div>
+                    <div class="salespoint__card">
+                        <h2 class="salespoint__card__title">Coaching-Pakete</h2>
+                        <p>Coaching-Pakete sind vorbereitete Coachingprozesse zu speziellen Lebensthemen. Sie beinhalten eine feste Anzahl von Sessions und haben eine klare Struktur, die auf sie angepasst wird.
+                            Beispiele für Lebensbereiche sind:
+                            <ul>
+                                <li>Selbstwert & Selbstliebe</li>
+                                <li>Flow & Work-Life Balance</li>
+                                <li>Berufung & Arbeit</li>
+                                <li>Integrale Lebenspraxis</li>
+                                <li>Partnerschaft & Liebe</li>
+                            </ul>
+                        </p>
+                    </div>
+                    <div class="salespoint__card">
+                        <h2 class="salespoint__card__title">Begleitung</h2>
+                        <p>Bei der Begleitung erhalten sie Coachings über einen vertraglich geregelten Zeitraum. Ich bin sowohl in der Session, aber auch auf Abruf verfügbar.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-four">
+            <div class="container row">
+                <div class="col">
+                    <img src="assets/img/profil/PAT_2027_websize.jpg" alt="Profilbild">
+                    <!-- <img src="../img/profil/PAT_2027_websize.jpg" alt="Profilbild"> -->
+                </div>
+                <div class="col">
+                    <h2 class="section-title">Über mich</h2>
+                    <p>Ich bin Nicole Grieder ein lebensfroher und bunter Mensch, mit vielen Interessen und Fähigkeiten. 
+                        Sehr gerne beschäftige ich mich mit Problemen, denn mein Ziel ist es den Menschen zu helfen ihr Glück in jedem Moment zu erkennen und ihre Zeit für die relevanten Dinge in ihrem Leben zu nutzen.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container row footer">
+            <div class="footer--left"><p>Nicole Grieder<br>Nebenmattstr. 12<br>4431 Bennwil<br><a href="mailto: coaching@nicole-grieder.ch" target="_self" class="nav__link">coaching@nicole-grieder.ch</a></p></div>
+            <div>
+                <img src="assets/img/LogoTree.png" alt="LogoBaum">
+            </div>
+            <div class="footer--right">
+                <ul class="nav__list">
+                    <li>
+                        <a href="#" class="nav__link">Datenschutz</a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav__link">Impressum</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-      </div>
-    </div>
-    <!-- <div class="hello">
-      Hello Nuxt {{ version }}!
-    </div> -->
-  </section>
+    </footer>
 </template>
 
 <style scoped>
