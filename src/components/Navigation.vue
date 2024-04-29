@@ -25,7 +25,7 @@
         <span class="hamburger"></span>
       </button>
     
-      <transition name="mobile-nav">
+      <transition name="mobile-nav" v-on:click="toggleMobileNav">
           <ul class="dropdown-nav" v-show="mobileNav">
               <li class="nav__item"><a href="#" class="nav__link">Home</a></li>
               <li class="nav__item"><a href="#" class="nav__link">Über mich</a></li>

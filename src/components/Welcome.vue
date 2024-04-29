@@ -21,11 +21,11 @@ import SupportIcon from './icons/IconSupport.vue'
             <h2 class="section-title section-title--dark">News</h2>
             <div class="row">
                 <div class="col">
-                    <p>Lieber Mensch, vielen Dank für deine Zeit und dein Interesse, einen Blick auf meine Webseite zu werfen. Bitte sei noch etwas geduldig, sie ist noch im Aufbau. 
-                        Ich bin noch mit der finalen Programmierung beschäftigt, mute dir nun aber dennoch die ersten Inhalte zu.</p>
+                    <p>Lieber Mensch, vielen Dank für deine Zeit und dein Interesse, einen Blick auf meine Webseite zu werfen. Bitte sei noch etwas geduldig, denn sie ist noch im Aufbau. 
+                        Ich bin mit der finalen Programmierung beschäftigt, kann dir jedoch erste Einblicke geben.</p>
                 </div>
                 <div class="col">
-                    <p>Mittlerweilen sind die verschieden Formate des Coachings ersichtlich, sowie ein kleiner Beschreib von mir.</p>
+                    <p>Mittlerweile sind die verschieden Formate des Coachings ersichtlich, ebenso eine Kurzvorstellung zu mir.</p>
                     <!-- <button></button> -->
                 </div>
             </div>
@@ -41,14 +41,14 @@ import SupportIcon from './icons/IconSupport.vue'
                     <p>Ein Laser Coaching eignet sich für:
                         <ul>
                             <li>Personen die sehr wenig Zeit haben</li>
-                            <li>akute Fälle (z.B. Streit)</li>
+                            <li>Bewältigung akuter Fälle (z.B. Streit)</li>
                             <li>klar umrissene Probleme (z.B. Gespräch mit Chef)</li>
                         </ul>  
                     </p>
                 </div>
                 <div class="salespoint__card">
                     <h2 class="salespoint__card__title">Kompakt-Coaching</h2>
-                    <p>Für umfangreichere Themen, empfehle ich das Kompakt-Coaching. Es eignet sich beim Problemen, die mehr als eine Session brauchen. Und haben einen durchschnittlichen Umfang von 2-5 Sessions.
+                    <p>Für umfangreichere Themen, empfehle ich das Kompakt-Coaching. Es eignet sich bei Problemen, die mehr als eine Session benötigen. Sie haben einen durchschnittlichen Umfang von 2-5 Sessions.
                         Themen können unteranderem folgende sein:
                         <ul>
                             <li>Partnerschaftskrisen</li>
@@ -60,8 +60,8 @@ import SupportIcon from './icons/IconSupport.vue'
                 </div>
                 <div class="salespoint__card">
                     <h2 class="salespoint__card__title">Coaching-Pakete</h2>
-                    <p>Coaching-Pakete sind vorbereitete Coachingprozesse zu speziellen Lebensthemen. Sie beinhalten eine feste Anzahl von Sessions und haben eine klare Struktur, die auf sie angepasst wird.
-                        Beispiele für Lebensbereiche sind:
+                    <p>Coaching-Pakete sind vorbereitete Coachingprozesse zu speziellen Lebensthemen. Sie beinhalten eine feste Anzahl von Sessions und haben eine klare Struktur, die auf die entsprechenden Lebensthemen angepasst werden.
+                        Zum Beispiel in folgenden Lebensbereichen:
                         <ul>
                             <li>Selbstwert & Selbstliebe</li>
                             <li>Flow & Work-Life Balance</li>
@@ -73,7 +73,7 @@ import SupportIcon from './icons/IconSupport.vue'
                 </div>
                 <div class="salespoint__card">
                     <h2 class="salespoint__card__title">Begleitung</h2>
-                    <p>Bei der Begleitung erhalten sie Coachings über einen vertraglich geregelten Zeitraum. Ich bin sowohl in der Session, aber auch auf Abruf verfügbar.</p>
+                    <p>Bei der Begleitung erhaltest du Coachings über einen vertraglich geregelten Zeitraum. Ich bin sowohl in der Session, sowohl auf Abruf verfügbar.</p>
                 </div>
             </div>
         </div>
@@ -82,7 +82,7 @@ import SupportIcon from './icons/IconSupport.vue'
     <section class="section-four">
         <div class="container row">
             <div class="col">
-                <img id="myImg" src="./../assets/img/profil/PAT_2027_websize.jpg" alt="Profilbild">
+                <img id="myImg" src="./../assets/img/profil/IMG_20240424_111007.jpg" alt="Profilbild">
                 <!-- The Modal -->
                 <div id="myModal" class="modal">
 
@@ -101,7 +101,7 @@ import SupportIcon from './icons/IconSupport.vue'
             <div class="col">
                 <h2 class="section-title">Über mich</h2>
                 <p>Ich bin Nicole Grieder ein lebensfroher und bunter Mensch, mit vielen Interessen und Fähigkeiten. 
-                    Sehr gerne beschäftige ich mich mit Problemen, denn mein Ziel ist es den Menschen zu helfen ihr Glück in jedem Moment zu erkennen und ihre Zeit für die relevanten Dinge in ihrem Leben zu nutzen.</p>
+                    Sehr gerne setye ich mich mit deinen Problemen auseinander. Mein Ziel ist es den Menschen zu helfen ihr Glück in jedem Moment zu erkennen und ihre Zeit für die wichtigen Dinge in ihrem Leben zu nutzen.</p>
             </div>
         </div>
     </section>
