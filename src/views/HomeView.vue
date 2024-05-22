@@ -1,14 +1,8 @@
 <script setup>
-import WelcomeItem from './WelcomeItem.vue'
-import DocumentationIcon from './icons/IconDocumentation.vue'
-import ToolingIcon from './icons/IconTooling.vue'
-import EcosystemIcon from './icons/IconEcosystem.vue'
-import CommunityIcon from './icons/IconCommunity.vue'
-import SupportIcon from './icons/IconSupport.vue'
 </script>
 
 <template>
-   <section class="intro">
+  <section class="intro">
         <div class="container">
             <p class="intro__text">Willkommen auf</p>
             <!-- <h1 class="intro__title">Responsive layouts don’t<br>have to be a struggle</h1> -->
@@ -18,7 +12,7 @@ import SupportIcon from './icons/IconSupport.vue'
 
     <section class="section-two">
         <div class="container">
-            <h2 class="section-title section-title--dark">News</h2>
+            <h1 class="section-title section-title--dark">News</h1>
             <div class="row">
                 <div class="col">
                     <p>Lieber Mensch, vielen Dank für deine Zeit und dein Interesse, einen Blick auf meine Webseite zu werfen. Bitte sei noch etwas geduldig, denn sie ist noch im Aufbau. 
@@ -34,12 +28,12 @@ import SupportIcon from './icons/IconSupport.vue'
 
     <section class="section-salespoints">
         <div class="container">
-            <h2 class="section-title section-title--dark">Coaching Formate</h2>
+            <h1 class="section-title section-title--dark">Coaching Formate</h1>
             <div class="salespoint row">
                 <div class="salespoint__card">
                     <h2 class="salespoint__card__title">Laser-Coaching</h2>
                     <p>Ein Laser Coaching eignet sich für:
-                        <ul>
+                        <ul class="inside">
                             <li>Personen die sehr wenig Zeit haben</li>
                             <li>Bewältigung akuter Fälle (z.B. Streit)</li>
                             <li>klar umrissene Probleme (z.B. Gespräch mit Chef)</li>
@@ -50,24 +44,24 @@ import SupportIcon from './icons/IconSupport.vue'
                     <h2 class="salespoint__card__title">Kompakt-Coaching</h2>
                     <p>Für umfangreichere Themen, empfehle ich das Kompakt-Coaching. Es eignet sich bei Problemen, die mehr als eine Session benötigen. Sie haben einen durchschnittlichen Umfang von 2-5 Sessions.
                         Themen können unteranderem folgende sein:
-                        <ul>
-                            <li>Partnerschaftskrisen</li>
-                            <li>Lebenskrisen/Weggabelungen</li>
-                            <li>berufliche Klärungsprozesse</li>
+                        <ul class="inside">
+                            <li>Partnerschafts&shy;krisen</li>
+                            <li>Lebenskrisen/ Weggabelungen</li>
+                            <li>berufliche Klärungs&shy;prozesse</li>
                             <li>Themen mit Kindern und Jugendlichen</li>
                         </ul>
                     </p>
                 </div>
                 <div class="salespoint__card">
                     <h2 class="salespoint__card__title">Coaching-Pakete</h2>
-                    <p>Coaching-Pakete sind vorbereitete Coachingprozesse zu speziellen Lebensthemen. Sie beinhalten eine feste Anzahl von Sessions und haben eine klare Struktur, die auf die entsprechenden Lebensthemen angepasst werden.
+                    <p>Coaching-Pakete sind vorbereitete Coaching&shy;prozesse zu speziellen Lebensthemen. Sie beinhalten eine feste Anzahl von Sessions und haben eine klare Struktur, die auf die entsprechenden Lebensthemen angepasst werden.
                         Zum Beispiel in folgenden Lebensbereichen:
-                        <ul>
+                        <ul class="inside">
                             <li>Selbstwert & Selbstliebe</li>
                             <li>Flow & Work-Life Balance</li>
                             <li>Berufung & Arbeit</li>
                             <li>Integrale Lebenspraxis</li>
-                            <li>Partnerschaft & Liebe</li>
+                            <li>Partner&shy;schaft & Liebe</li>
                         </ul>
                     </p>
                 </div>
@@ -79,7 +73,7 @@ import SupportIcon from './icons/IconSupport.vue'
         </div>
     </section>
 
-    <section class="section-four">
+    <section class="section-about">
         <div class="container row">
             <div class="col">
                 <img id="myImg" src="./../assets/img/profil/IMG_20240424_111007.jpg" alt="Profilbild">
@@ -99,18 +93,33 @@ import SupportIcon from './icons/IconSupport.vue'
             </div>
 
             <div class="col">
-                <h2 class="section-title">Über mich</h2>
+                <h1 class="section-title">Über mich</h1>
                 <p>Ich bin Nicole Grieder ein lebensfroher und bunter Mensch, mit vielen Interessen und Fähigkeiten. 
-                    Sehr gerne setye ich mich mit deinen Problemen auseinander. Mein Ziel ist es den Menschen zu helfen ihr Glück in jedem Moment zu erkennen und ihre Zeit für die wichtigen Dinge in ihrem Leben zu nutzen.</p>
-            </div>
+                    Sehr gerne setze ich mich mit deinen Problemen auseinander. Mein Ziel ist es den Menschen zu helfen ihr Glück in jedem Moment zu erkennen und ihre Zeit für die wichtigen Dinge in ihrem Leben zu nutzen.</p>
+                <span><a class="link--button --dark"><RouterLink to="/about">mehr</RouterLink></a></span>
+                </div>
         </div>
     </section>
 </template>
-
-
-
-
 <style scoped>
+a.link--button{
+  background-color: var(--color-gold);
+  color: var(--color-petrol-dark);
+  padding: 0.2em 0.6em;
+  border-radius: 30px;
+  
+  font-weight: 500;
+}
+
+a:hover.link--button, a:focus.link--button{
+  opacity: 0.85;
+  border-color: hsl(var(--color-petrol-dark-hsl),0.85);
+}
+
+a.--dark{
+  color: var(--color-gold-light);
+  background-color: var(--color-petrol-dark);
+}
 
 /* Style the Image Used to Trigger the Modal */
 #myImg {
@@ -189,7 +198,9 @@ import SupportIcon from './icons/IconSupport.vue'
   }
 }
 
-
+template{
+  /* background-image: url(./img/landscapes/IMG_20231103_123835.jpg); */
+}
 
   .intro__title{
     font-size: 3rem;
@@ -200,9 +211,9 @@ import SupportIcon from './icons/IconSupport.vue'
     display: flex;
     align-items: center;
     background-color: var(--color-petrol-dark);
-    padding: 0 0 5em 0;
+    padding: 6em 0 5em 0;
     text-align: center;
-    min-height: 660px;
+    min-height: 50vh;
     /* min-height: 80vh; like a teaser */
   }
   .intro__text{
@@ -251,18 +262,11 @@ import SupportIcon from './icons/IconSupport.vue'
   .section-salespoints{
     background-color: hsl(var(--color-petrol-dark-hsl) ,0.6);
   }
-  .section-title{
-    color: var(--color-gold-light);
-    font-size: 2.25rem;
-  }
-  .section-title--dark{
-    color: var(--color-gold);
-  }
   .section-three{
     background-color: var(--color-petrol-dark);
     color: var(--color-white);
   }
-  .section-four{
+  .section-about{
     background-color: hsl(var(--color-gold-hsl) ,0.8);
     color: var(--color-white);
   }

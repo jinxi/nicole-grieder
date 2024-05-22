@@ -1,5 +1,3 @@
-@import './base.css';
-
 #app {
   display: flex;
   flex-direction: column;
@@ -7,7 +5,9 @@
   margin: 0 auto;
   /* padding: 2rem; */
   font-weight: normal;
-  background-image: url(./img/landscapes/IMG_20231027_120349.jpg)
+  /* background-image: url(./img/landscapes/IMG_20231102_111856.jpg); */
+  background-size: cover;
+  background-color: #cccccc;
 }
 
 h1, h2{
@@ -17,6 +17,10 @@ h1, h2{
   font-style: normal;
   line-height: 1.1;
   padding-bottom: 0.2em;
+}
+
+p{
+    padding: 0 0 1em 0;
 }
 
 section{
@@ -29,12 +33,55 @@ section{
   /* border: 1px solid orange; */
 }
 
+.section-title{
+  color: var(--color-gold-light);
+  font-size: 2.25rem;
+}
+.section-title--dark{
+  color: var(--color-gold);
+}
+ul.inside{
+  list-style-position: inside;
+}
+
 
 .main {
   /* margin-top: 4em; */
 }
 section{
   padding: 4em 0;
+}
+
+nav ul,a{
+  color: var(--color-gold);
+  list-style: none;
+  text-decoration: none;
+}
+
+nav li{
+  text-transform: uppercase;
+}
+nav a{
+  transition: 0.5s ease all;
+  border-bottom: 1px solid transparent;
+}
+
+.nav__item{
+  margin-top: 0.25em;
+}
+
+.nav__list{
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  gap: 1rem;
+}
+
+@media (max-width: 900px) {
+  .nav__list{
+    justify-content: center;
+  }
 }
 
 footer{
@@ -48,19 +95,6 @@ footer{
 }
 
 @media (min-width: 900px){
-  .footer{
-    align-items: center;
-    justify-content: space-between;
-  }
-  .footer--left{
-    text-align: left;
-  }
-  .footer--right{
-    text-align: right;
-  }
-}
-
-@media (min-width: 900px){
   .row{
       display: flex;
   }
@@ -69,6 +103,41 @@ footer{
   }
   .col + .col{
       margin-left: 3em;
+  }
+}
+
+.nav-gap{
+  padding-top: 6em;
+}
+
+.hero__title{
+  font-size: 3rem;
+  color: var(--color-gold);
+  padding: 0;
+}
+.hero{
+  display: flex;
+  align-items: center;
+  background-color: var(--color-petrol-dark);
+  padding: 6em 0 5em 0;
+  text-align: center;
+  min-height: 50vh;
+  /* min-height: 80vh; like a teaser */
+}
+.hero__text{
+  color: var(--color-gold);
+  font-weight: 300;
+  font-size: 1.1rem;
+  letter-spacing: 1em;
+  text-transform: uppercase;
+  margin: 0 0 .25em;
+  padding-top: 1em;
+  /* color: var(--color-gold); */
+}
+
+@media (min-width: 900px){
+  .hero__title{
+      font-size: 3.75rem;
   }
 }
 
