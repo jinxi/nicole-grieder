@@ -12,7 +12,7 @@
   <section class="section-about">
       <div class="container row">
           <div class="col">
-              <img id="myImg" src="./../assets/img/profil/IMG_20240424_111007.jpg" alt="Profilbild">
+              <img class="--round-boarders" id="myImg" src="./../assets/img/profil/IMG_20240424_111007.jpg" alt="Profilbild">
               <!-- todo: The Modal -->
           
           </div>

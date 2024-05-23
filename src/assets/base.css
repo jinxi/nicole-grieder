@@ -7,6 +7,8 @@
   --color-gold: #ce944f;
   --color-gold-hsl: 32.6, 56.44%, 55.88%;
   --color-gold-light: #ded0be;
+  --color-gray: #444;
+  --color-gray-light: #ccc;
   --color-dark: #1e2020;
   --color-dark-hsl: 180, 3.23%, 12.16%;
   --color-white: aliceblue;
@@ -23,6 +25,8 @@
     --color-gold: #ce944f;
     --color-gold-hsl: 32.6, 56.44%, 55.88%;
     --color-gold-light: #ded0be;
+    --color-gray: #444;
+    --color-gray-light: #ccc;
     --color-dark: #1e2020;
     --color-dark-hsl: 180, 3.23%, 12.16%;
     --color-white: aliceblue;

@@ -76,7 +76,7 @@
     <section class="section-about">
         <div class="container row">
             <div class="col">
-                <img id="myImg" src="./../assets/img/profil/IMG_20240424_111007.jpg" alt="Profilbild">
+                <img class="--round-boarders" src="./../assets/img/profil/IMG_20240424_111007.jpg" alt="Profilbild">
                 <!-- The Modal -->
                 <div id="myModal" class="modal">
 
@@ -93,10 +93,10 @@
             </div>
 
             <div class="col">
-                <h1 class="section-title">Über mich</h1>
-                <p>Ich bin Nicole Grieder ein lebensfroher und bunter Mensch, mit vielen Interessen und Fähigkeiten. 
+                <h1 class="section-title section-title--dark">Über mich</h1>
+                <p class="text--light">Ich bin Nicole Grieder ein lebensfroher und bunter Mensch, mit vielen Interessen und Fähigkeiten. 
                     Sehr gerne setze ich mich mit deinen Problemen auseinander. Mein Ziel ist es den Menschen zu helfen ihr Glück in jedem Moment zu erkennen und ihre Zeit für die wichtigen Dinge in ihrem Leben zu nutzen.</p>
-                <span><a class="link--button --dark"><RouterLink to="/about">mehr</RouterLink></a></span>
+                <span><a class="link--button --dark" target="_top"><RouterLink to="/about">mehr</RouterLink></a></span>
                 </div>
         </div>
     </section>
@@ -243,7 +243,7 @@ template{
   .salespoint__card{
     min-width: 20%;
     border-radius: 15px;
-    border: 0.1em solid var(--color-gold);
+    border: 0.1em solid var(--color-gray);
     box-shadow: 3px 3px 25px 5px rgba(0, 0, 0, .5);
     /* box-shadow: 3px 3px 25px 5px hsl(var(--color-gold-hsl)0.2); */
     background-color: var(--color-gold-light);
@@ -267,7 +267,7 @@ template{
     color: var(--color-white);
   }
   .section-about{
-    background-color: hsl(var(--color-gold-hsl) ,0.8);
+    background-color: var(--color-gray);
     color: var(--color-white);
   }
   .btn_hero{

@@ -49,7 +49,7 @@ import { RouterLink } from 'vue-router';
 
 <template>
   <!-- shrink navigation at a certain scrollPoisition -->
-<header :class="{ 'scrolled-nav': scrollNav && !mobile }" > 
+<header :class="{ 'scrolled-nav': scrollNav }" > 
   <nav class="container">
       <transition name="fade">
         <div class="branding" v-show="!mobile || mobileNav" >
@@ -92,6 +92,7 @@ header{
   display: flex;
   /* flex-direction: row; */
   justify-content: center;
+  align-items: center;
   height: 80px;
   background-color: var(--color-petrol-dark);
   padding: 1em 0;
@@ -263,7 +264,7 @@ nav a{
   /* border: 2px solid pink; */
   position: fixed;
   right: 2em;
-  top: 2em;
+  top: 1.5em;
 
   z-index: 2;
 }

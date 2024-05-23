@@ -7,7 +7,7 @@
   font-weight: normal;
   /* background-image: url(./img/landscapes/IMG_20231102_111856.jpg); */
   background-size: cover;
-  background-color: #cccccc;
+  background-color: var(--color-gray-light);
 }
 
 h1, h2{
@@ -40,6 +40,10 @@ section{
 .section-title--dark{
   color: var(--color-gold);
 }
+.text--light{
+  color: var(--color-gold-light);
+}
+
 ul.inside{
   list-style-position: inside;
 }
@@ -141,6 +145,12 @@ footer{
   }
 }
 
+.--round-boarders{
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.--round-boarders:hover {opacity: 0.7;}
 /* a,
 .green {
   text-decoration: none;
