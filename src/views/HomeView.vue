@@ -94,8 +94,11 @@
 
             <div class="col">
                 <h1 class="section-title section-title--dark">Über mich</h1>
-                <p class="text--light">Ich bin Nicole Grieder ein lebensfroher und bunter Mensch, mit vielen Interessen und Fähigkeiten. 
-                    Sehr gerne setze ich mich mit deinen Problemen auseinander. Mein Ziel ist es den Menschen zu helfen ihr Glück in jedem Moment zu erkennen und ihre Zeit für die wichtigen Dinge in ihrem Leben zu nutzen.</p>
+                <p class="text--light">Ich bin Nicole Grieder ein lebensfroher, willensstarker und bunter Mensch, mit vielen Interessen und Fähigkeiten. 
+                    Sehr gerne setze ich mich mit deinen Problemen oder mit Team Problemen in deiner Firma auseinander. 
+                    Mein Ziel ist es den Menschen zu helfen mehr Flow zustände zu erlangen, denn ich bin überzeugt, dass mehr Flow nicht nur effizienter, 
+                    sondern auch zu mehr selbstwirksamkeit führt und glücklicher macht.
+                </p>
                 <span><a class="link--button --dark" target="_top"><RouterLink to="/about">mehr</RouterLink></a></span>
                 </div>
         </div>

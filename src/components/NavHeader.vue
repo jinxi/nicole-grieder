@@ -60,6 +60,7 @@ import { RouterLink } from 'vue-router';
        <ul class="nav__list nav__list--primary">
         <li class="nav__item"><RouterLink class="nav__link" to="/">Home</RouterLink></li>
         <li class="nav__item"><RouterLink class="nav__link" to="/about">Über mich</RouterLink></li>
+        <li class="nav__item"><RouterLink class="nav__link" to="/companyoffer">Firmen Angebot</RouterLink></li>
         <!-- <li class="nav__item"><RouterLink class="nav__link" to="/datenschutz">Datenschutz</RouterLink></li>
         <li class="nav__item"><RouterLink class="nav__link" to="/impressum">Impressum</RouterLink></li> -->
       </ul>
@@ -78,6 +79,7 @@ import { RouterLink } from 'vue-router';
           
           <li class="nav__item"><RouterLink class="nav__link" to="/">Home</RouterLink></li>
           <li class="nav__item"><RouterLink class="nav__link" to="/about">Über mich</RouterLink></li>
+          <li class="nav__item"><RouterLink class="nav__link" to="/companyoffer">Firmen Angebot</RouterLink></li>
           <!-- <li class="nav__item"><RouterLink class="nav__link" to="/datenschutz">Datenschutz</RouterLink></li>
           <li class="nav__item"><RouterLink class="nav__link" to="/impressum">Impressum</RouterLink></li> -->
         </ul>
