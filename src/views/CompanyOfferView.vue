@@ -11,215 +11,209 @@
   </section>
   <section class="section-company">
       <div class="container row">
-          <div class="col">
-              <img class="--round-boarders" id="myImg" src="./../assets/img/profil/IMG_20240424_111007.jpg" alt="Profilbild">
-          </div>
-
-          <div class="col">
-            <h1 class="section-title section-title--dark">Über mich</h1>
-            <p>Ich bin knappe 40 Jahre jung und Mutter zweier Kinder. Habe eine Kauf&shy;männische und eine Informatik Ausbildung. 
-              War 15 Jahr bis 2023 in Österreich. Habe einen Bachelor in Informations&shy;technologie und Telekommunikation und einen Master in Game&shy;engineering und Simulation.
-            </p>
-            <p>Im 2023 habe ich die Ausbildung <a href="https://lifetrust-coach.com/" target="_blank">"Life Trust Coach"</a> von Veit Lindau mit all den 12 Prüfungen erfolgreich abgeschlossen.
-            </p>
-            <p>Am liebsten arbeite ich als Selbständige für Firmen mit IT und/oder Entwicklerteams, weil ich da meine fachlichen Kompetenzen vereinen kann und somit einen grossen Gewinn für die Firmen bin.
-            </p>
-          </div>
+        <div class="col">
+            <img class="--round-boarders" id="myImg" src="./../assets/img/profil/IMG_20240424_111007.jpg" alt="Profilbild">
         </div>
+
+        <div class="col">
+          <h1 class="section-title section-title--dark">Über mich</h1>
+          <p>Ich bin knappe 40 Jahre jung und Mutter zweier Kinder. Habe eine Kauf&shy;männische und eine Informatik Ausbildung. 
+            War 15 Jahr bis 2023 in Österreich. Habe einen Bachelor in Informations&shy;technologie und Telekommunikation und einen Master in Game&shy;engineering und Simulation.
+          </p>
+          <p>Im 2023 habe ich die Ausbildung <a href="https://lifetrust-coach.com/" target="_blank">"Life Trust Coach"</a> von Veit Lindau mit all den 12 Prüfungen erfolgreich abgeschlossen.
+          </p>
+          <p>Am liebsten arbeite ich als Selbständige für Firmen mit IT und/oder Entwicklerteams, weil ich da meine fachlichen Kompetenzen vereinen kann und somit einen grossen Gewinn für die Firmen bin.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section>
         <div class="container">
-          <div class="accordion-container">
+          <div class="section-accordion">
               <div class="accordion">
                   <div class="accordion-panel">
-                      <div>
-                          <!-- connect the heading id with the aria-labelledby to interact. 
-                              with role you can jump to content, this also needs the labelledby attribut -->
-                          <h2 id="panel1-heading">
-                              <button
-                                @click="toggleAccordion"
-                                class="accordion-trigger"
-                                aria-controls="panel1-content"
-                                aria-expanded="true"
-                                >
-                                  <span id="panel1-title">Analyse</span>
-                                  <svg aria-hidden="true" class="accordion-icon">
-                                      <use xlink:href="#eyeglasses"></use>
-                                  </svg>
-                              </button>
-                          </h2>
-                          <div 
-                            class="accordion-content" 
-                            id="panel1-content" 
-                            aria-labelledby="panel1-heading"
-                            aria-hidden="false"
-                            role="region"
+                    <!-- connect the heading id with the aria-labelledby to interact. 
+                        with role you can jump to content, this also needs the labelledby attribut -->
+                    <h2 id="panel1-heading">
+                        <button
+                          @click="toggleAccordion"
+                          class="accordion-trigger"
+                          aria-controls="panel1-content"
+                          aria-expanded="true"
+                          >
+                            <span id="panel1-title">Analyse</span>
+                            <svg class="accordion-icon">
+                                <use xlink:href="#eyeglasses"></use>
+                            </svg>
+                        </button>
+                    </h2>
+                    <div 
+                      class="accordion-content" 
+                      id="panel1-content" 
+                      aria-labelledby="panel1-heading"
+                      aria-hidden="true"
+                      role="region"
+                      >
+                      <p>In der Analyse wird das Team kennen gelernt und vertrauen geschaffen. Es wird die Mitarbeiterzufriedenheit abgetastet. Mitarbeiterkonflikte angesprochen. Die unterschiedlichen Mitarbeitercharakteren werden anerkannt. Verbesserungspotentiale werden aufgedeckt. Mögliche Strategien und Arbeitsabläufe werden besprochen.</p>
+                      <!-- todo: use webp compression -->
+                      <img 
+                        class="accordion-image"
+                        src="./../assets/img/animal/IMG_20230324_092538.jpg"
+                        alt="Ladybug on green leave"
+                      />
+                    </div>
+                  </div>
+                  <div class="accordion-panel">
+                      <!-- connect the heading id with the aria-labelledby to interact. 
+                          with role you can jump to content, this also needs the labelledby attribut -->
+                      <h2 id="panel2-heading">
+                          <button
+                            @click="toggleAccordion"
+                            class="accordion-trigger"
+                            aria-controls="panel2-content"
+                            aria-expanded="false"
                             >
-                            <p>In der Analyse wird das Team kennen gelernt und vertrauen geschaffen. Es wird die Mitarbeiterzufriedenheit abgetastet. Mitarbeiterkonflikte angesprochen. Die unterschiedlichen Mitarbeitercharakteren werden anerkannt. Verbesserungspotentiale werden aufgedeckt. Mögliche Strategien und Arbeitsabläufe werden besprochen.</p>
-                            <!-- todo: use webp compression -->
-                            <img 
-                              class="accordion-image"
-                              src="./../assets/img/animal/IMG_20230324_092538.jpg"
-                              alt="Ladybug on green leave"
-                            />
-                          </div>
+                              <span id="panel2-title">Nachbearbeitung</span>
+                              <svg class="accordion-icon">
+                                  <use xlink:href="#psychology"></use>
+                              </svg>
+                          </button>
+                      </h2>
+                      <div 
+                        class="accordion-content" 
+                        id="panel2-content" 
+                        aria-labelledby="panel2-heading"
+                        aria-hidden="true"
+                        role="region"
+                        >
+                        <p>In der Nachbearbeitung wird analysiertes in einem möglichen Konzept verfasst. Es wird der IST-Zustand des Teams und dessen Herausforderung festgehalten. Es werden Lösungsansätze aufgelistet und Ziele definiert.</p>
+                        <img 
+                          class="accordion-image"
+                          src="./../assets/img/animal/IMG_20231030_112151.jpg"
+                          alt="Ladybug on green leave"
+                        />
                       </div>
-                      <div>
-                          <!-- connect the heading id with the aria-labelledby to interact. 
-                              with role you can jump to content, this also needs the labelledby attribut -->
-                          <h2 id="panel2-heading">
-                              <button
-                                @click="toggleAccordion"
-                                class="accordion-trigger"
-                                aria-controls="panel2-content"
-                                aria-expanded="false"
-                                >
-                                  <span id="panel2-title">Nachbearbeitung</span>
-                                  <svg aria-hidden="true" class="accordion-icon">
-                                      <use xlink:href="#psychology"></use>
-                                  </svg>
-                              </button>
-                          </h2>
-                          <div 
-                            class="accordion-content" 
-                            id="panel2-content" 
-                            aria-labelledby="panel2-heading"
-                            aria-hidden="false"
-                            role="region"
+                  </div>
+                  <div class="accordion-panel">
+                    <h2 id="panel3-heading">
+                        <button
+                          @click="toggleAccordion"
+                          class="accordion-trigger"
+                          aria-controls="panel3-content"
+                          aria-expanded="false"
+                          >
+                            <span id="panel3-title">Massnahme</span>
+                            <svg class="accordion-icon">
+                                <use xlink:href="#sports"></use>
+                            </svg>
+                        </button>
+                    </h2>
+                    <div 
+                      class="accordion-content" 
+                      id="panel3-content" 
+                      aria-labelledby="panel3-heading"
+                      aria-hidden="true"
+                      role="region"
+                      >
+                      <p>In der Massnahme legen wir ein bis 2 konkrete Ziele fest und erarbeiten Methoden/Strategien zu dessen Umsetzung.</p>
+                      <img 
+                        class="accordion-image"
+                        src="./../assets/img/animal/IMG_20231029_105322.jpg"
+                        alt="Ladybug on green leave"
+                      />
+                    </div>
+                  </div>
+                  <div class="accordion-panel">
+                      <h2 id="panel4-heading">
+                          <button
+                            @click="toggleAccordion"
+                            class="accordion-trigger"
+                            aria-controls="panel4-content"
+                            aria-expanded="false"
                             >
-                            <p>In der Nachbearbeitung wird analysiertes in einem möglichen Konzept verfasst. Es wird der IST-Zustand des Teams und dessen Herausforderung festgehalten. Es werden Lösungsansätze aufgelistet und Ziele definiert.</p>
-                            <img 
-                              class="accordion-image"
-                              src="./../assets/img/animal/IMG_20231030_112151.jpg"
-                              alt="Ladybug on green leave"
-                            />
-                          </div>
+                              <span id="panel4-title">Massnahmenbesprechung</span>
+                              <svg aria-hidden="true" class="accordion-icon">
+                                  <use xlink:href="#communication"></use>
+                              </svg>
+                          </button>
+                      </h2>
+                      <div 
+                        class="accordion-content" 
+                        id="panel4-content" 
+                        aria-labelledby="panel4-heading"
+                        aria-hidden="false"
+                        role="region"
+                        >
+                        <p>In der Massnahmenbesprechung wird die Massnahme vorgestellt und etwaige Anpassungen vorgenommen. Spielregeln werden aufgestellt und das Kommittment der einzelnen Mitarbeiter wird eingeholt.</p>
+                        <img 
+                          class="accordion-image"
+                          src="./../assets/img/animal/IMG_20231102_123030.jpg"
+                          alt="Ladybug on green leave"
+                        />
                       </div>
-                      <div>
-                          <h2 id="panel3-heading">
-                              <button
-                                @click="toggleAccordion"
-                                class="accordion-trigger"
-                                aria-controls="panel3-content"
-                                aria-expanded="false"
-                                >
-                                  <span id="panel3-title">Massnahme</span>
-                                  <svg aria-hidden="true" class="accordion-icon">
-                                      <use xlink:href="#sports"></use>
-                                  </svg>
-                              </button>
-                          </h2>
-                          <div 
-                            class="accordion-content" 
-                            id="panel3-content" 
-                            aria-labelledby="panel3-heading"
-                            aria-hidden="false"
-                            role="region"
+                  </div>
+                  <div  class="accordion-panel">
+                      <h2 id="panel5-heading">
+                          <button
+                            @click="toggleAccordion"
+                            class="accordion-trigger"
+                            aria-controls="panel5-content"
+                            aria-expanded="false"
                             >
-                            <p>In der Massnahme legen wir ein bis 2 konkrete Ziele fest und erarbeiten Methoden/Strategien zu dessen Umsetzung.</p>
-                            <img 
-                              class="accordion-image"
-                              src="./../assets/img/animal/IMG_20231029_105322.jpg"
-                              alt="Ladybug on green leave"
-                            />
-                          </div>
+                              <span id="panel5-title">Begleitung</span>
+                              <svg aria-hidden="true" class="accordion-icon">
+                                  <use xlink:href="#directions_walk"></use>
+                              </svg>
+                          </button>
+                      </h2>
+                      <div 
+                        class="accordion-content" 
+                        id="panel5-content" 
+                        aria-labelledby="panel5-heading"
+                        aria-hidden="false"
+                        role="region"
+                        >
+                        <p>In der Begleitungsphase werden die neuen Routinen geprüft, denn es braucht einige Zeit bis sich alle an den neuen Rhythmus gewöhnt haben und ihn konsequent umsetzen. Hier dreht sich es vor allem um die Frage, was geht schon gut, womit haben die Mitarbeiter noch Mühe. Die Begleitung dauert 2 Monate und kann dann vom Team selbstgetragen werden.</p>
+                        <img 
+                          class="accordion-image"
+                          src="./../assets/img/animal/IMG_20231102_123230.jpg"
+                          alt="Ladybug on green leave"
+                        />
                       </div>
-                      <div>
-                          <h2 id="panel4-heading">
-                              <button
-                                @click="toggleAccordion"
-                                class="accordion-trigger"
-                                aria-controls="panel4-content"
-                                aria-expanded="false"
-                                >
-                                  <span id="panel4-title">Massnahmenbesprechung</span>
-                                  <svg aria-hidden="true" class="accordion-icon">
-                                      <use xlink:href="#communication"></use>
-                                  </svg>
-                              </button>
-                          </h2>
-                          <div 
-                            class="accordion-content" 
-                            id="panel4-content" 
-                            aria-labelledby="panel4-heading"
-                            aria-hidden="false"
-                            role="region"
+                  </div>
+                  <div class="accordion-panel">
+                      <h2 id="panel6-heading">
+                          <button
+                            @click="toggleAccordion"
+                            class="accordion-trigger"
+                            aria-controls="panel6-content"
+                            aria-expanded="false"
                             >
-                            <p>In der Massnahmenbesprechung wird die Massnahme vorgestellt und etwaige Anpassungen vorgenommen. Spielregeln werden aufgestellt und das Kommittment der einzelnen Mitarbeiter wird eingeholt.</p>
-                            <img 
-                              class="accordion-image"
-                              src="./../assets/img/animal/IMG_20231102_123030.jpg"
-                              alt="Ladybug on green leave"
-                            />
-                          </div>
-                      </div>
-                      <div>
-                          <!-- connect the heading id with the aria-labelledby to interact. 
-                              with role you can jump to content, this also needs the labelledby attribut -->
-                          <h2 id="panel5-heading">
-                              <button
-                                @click="toggleAccordion"
-                                class="accordion-trigger"
-                                aria-controls="panel5-content"
-                                aria-expanded="false"
-                                >
-                                  <span id="panel5-title">Begleitung</span>
-                                  <svg aria-hidden="true" class="accordion-icon">
-                                      <use xlink:href="#directions_walk"></use>
-                                  </svg>
-                              </button>
-                          </h2>
-                          <div 
-                            class="accordion-content" 
-                            id="panel5-content" 
-                            aria-labelledby="panel5-heading"
-                            aria-hidden="false"
-                            role="region"
-                            >
-                            <p>In der Begleitungsphase werden die neuen Routinen geprüft, denn es braucht einige Zeit bis sich alle an den neuen Rhythmus gewöhnt haben und ihn konsequent umsetzen. Hier dreht sich es vor allem um die Frage, was geht schon gut, womit haben die Mitarbeiter noch Mühe. Die Begleitung dauert 2 Monate und kann dann vom Team selbstgetragen werden.</p>
-                            <img 
-                              class="accordion-image"
-                              src="./../assets/img/animal/IMG_20231102_123230.jpg"
-                              alt="Ladybug on green leave"
-                            />
-                          </div>
-                      </div>
-                      <div>
-                          <!-- connect the heading id with the aria-labelledby to interact. 
-                              with role you can jump to content, this also needs the labelledby attribut -->
-                          <h2 id="panel6-heading">
-                              <button
-                                @click="toggleAccordion"
-                                class="accordion-trigger"
-                                aria-controls="panel6-content"
-                                aria-expanded="false"
-                                >
-                                  <span id="panel6-title">Feedback</span>
-                                  <svg aria-hidden="true" class="accordion-icon">
-                                      <use xlink:href="#celebration"></use>
-                                  </svg>
-                              </button>
-                          </h2>
-                          <div 
-                            class="accordion-content" 
-                            id="panel6-content" 
-                            aria-labelledby="panel6-heading"
-                            aria-hidden="false"
-                            role="region"
-                            >
-                            <p>Mittels eines kurzen Fragebogens, holen wir uns gerne das Feedback der Mitarbeiter und der Firma zu unserer Leistung ab, denn auch wir sind an stetiger Verbesserung interessiert.</p>
-                            <img 
-                              class="accordion-image"
-                              src="./../assets/img/animal/IMG_20231102_135923.jpg"
-                              alt="Ladybug on green leave"
-                            />
-                          </div>
+                              <span id="panel6-title">Feedback</span>
+                              <svg aria-hidden="true" class="accordion-icon">
+                                  <use xlink:href="#celebration"></use>
+                              </svg>
+                          </button>
+                      </h2>
+                      <div 
+                        class="accordion-content" 
+                        id="panel6-content" 
+                        aria-labelledby="panel6-heading"
+                        aria-hidden="false"
+                        role="region"
+                        >
+                        <p>Mittels eines kurzen Fragebogens, holen wir uns gerne das Feedback der Mitarbeiter und der Firma zu unserer Leistung ab, denn auch wir sind an stetiger Verbesserung interessiert.</p>
+                        <img 
+                          class="accordion-image"
+                          src="./../assets/img/animal/IMG_20231102_135923.jpg"
+                          alt="Ladybug on green leave"
+                        />
                       </div>
                   </div>
               </div>
-              <!-- </div> -->
-
           </div>
       </div>
-  </section>
+    </section>
   <svg width="0" height="0" class="hidden">
     <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" id="menu">
       <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"></path>
@@ -297,28 +291,58 @@
 </template>
 
 <style>
-.accordion-container{
+.section-accordion{
   /* max-width: 50rem; */
   margin-inline: auto;
   /* padding-inline: 1rem; */
 }
 
 .accordion{
+  --_button-size: 3rem;
+  --_panel-padding: 0.75rem;
+
   display: flex;
   flex-direction: column;
   gap: 1rem;
+  /* border: 3px solid white; */
 }
+.accordion *{
+  margin: 0;
+}
+
 .accordion-panel{
   position: relative;
   /* needs isolation, because in app there is a background set */
   isolation: isolate; 
-  height: 100px;
-  border: 3px solid orange;
+  /* max-height: 100px; */
+  flex-basis: calc(var(--_panel-padding)*2 + var(--_button-size));
+  overflow: hidden;
+  padding: var(--_panel-padding);
+
+  border-radius: calc((var(--_panel-padding)*2 + var(--_button-size))/2);
+
+  /* border: 3px solid orange; */
+}
+
+/* .accordion-panel:nth-child(1){
+  --_panel-color:red;
+}
+.accordion-panel:nth-child(2){
+  --_panel-color:blue;
+}
+
+.accordion-content{
+  border: 2px solid blue;
+} */
+
+.accordion-panel:has([aria-expanded="true"]){
+  /* flex-basis: 500%; */
+  flex-basis: clamp(15rem, 40vh, 20rem);
 }
 
 .accordion-image{
   position: absolute;
-  /* inset: 0; */
+  inset: 0;
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -326,21 +350,24 @@
 }
 
 .accordion-trigger{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-direction: row-reverse;
   background: transparent;
   border: 0;
+  padding: 0;
+  /* border: 3px solid red; */
 }
 
 .accordion-icon{
   fill: var(--color-gold, pink);
+  /* fill: var(--_panel-color); */
   background: hsl(var(--color-petrol-dark-hsl),0.80);
-  width: 3rem;
+  width: var(--_button-size);
   aspect-ratio: 1/1;
-  padding: 0.75rem;
+  padding: var(--_panel-padding);
   border-radius: 50%;
-}
-
-.accordion-panel:nth-child(1){
-  /* --color-gold: red; */
 }
 
 </style>
