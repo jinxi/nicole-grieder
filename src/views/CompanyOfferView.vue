@@ -1,5 +1,63 @@
 <script>
+  // const accordion = document.querySelector(".accordion");
+
+  // accordion.addEventListener('click', (e)=>{
+  //   console.log(e.target);
+  // });
 </script>
+
+<script setup>
+        defineProps(['data']);
+        // create array of icons according to the panel id
+        var iconList = [];
+          iconList[0] = '#add';
+        
+
+        function toggleAccordion(panelClicked){
+            console.log(panelClicked.target.closest(".accordion-panel"));
+            // todo: make dynamic sometime
+            const index = panelClicked.target.closest(".accordion-panel").id;
+            const panelToToggle = panelClicked.target.closest(".accordion-trigger");
+            // const contentToToggle = panelCliecked.target.closest(".accordion-content");
+            //if open-> close; if close -> open
+            // console.log(panelToToggle.getAttribute('aria-expanded'));
+            
+            const panelContent = panelToToggle.parentElement.parentElement.querySelector("div");
+            const panelIcon = panelToToggle.querySelector("use");
+
+            if(panelIcon.getAttribute('xlink:href') != '#close'){
+              iconList[index] = panelIcon.getAttribute('xlink:href');
+              console.log("Icon added to the iconList: " + iconList[index]);
+            }
+            console.log(iconList);
+
+            const panelStatus = panelToToggle.getAttribute('aria-expanded');
+            console.log(panelStatus);
+            if(panelStatus==='true'){
+                // closes the panel
+                panelToToggle.setAttribute('aria-expanded', false);
+                panelContent.setAttribute('aria-hidden', true);
+                // check if an icon is set in the panel
+                if(iconList[index]==''){
+                  panelIcon.setAttribute('xlink:href', iconList[0]);
+                  console.warn("icon of clicked panel was empty, icon got set to default add icon. to use custom icon, please set the xlink:href in the clicked panel.");
+                }else{
+                  panelIcon.setAttribute('xlink:href', iconList[index]);
+                }
+                console.log(panelIcon);
+                console.log("-- closed the panel -- ");
+            }else{
+                // opens the panel
+                panelToToggle.setAttribute('aria-expanded', true);
+                panelContent.setAttribute('aria-hidden', false);
+                panelIcon.setAttribute('xlink:href','#close');
+                console.log(panelIcon);
+                console.log("-- opened the panel -- ");
+            }
+        }
+
+</script>
+
 
 
 <template>
@@ -31,7 +89,7 @@
         <div class="container">
           <div class="section-accordion">
               <div class="accordion">
-                  <div class="accordion-panel">
+                  <div class="accordion-panel" id="1">
                     <!-- connect the heading id with the aria-labelledby to interact. 
                         with role you can jump to content, this also needs the labelledby attribut -->
                     <h2 id="panel1-heading">
@@ -63,7 +121,7 @@
                       />
                     </div>
                   </div>
-                  <div class="accordion-panel">
+                  <div class="accordion-panel" id="2">
                       <!-- connect the heading id with the aria-labelledby to interact. 
                           with role you can jump to content, this also needs the labelledby attribut -->
                       <h2 id="panel2-heading">
@@ -94,7 +152,7 @@
                         />
                       </div>
                   </div>
-                  <div class="accordion-panel">
+                  <div class="accordion-panel" id="3">
                     <h2 id="panel3-heading">
                         <button
                           @click="toggleAccordion"
@@ -123,7 +181,7 @@
                       />
                     </div>
                   </div>
-                  <div class="accordion-panel">
+                  <div class="accordion-panel" id="4">
                       <h2 id="panel4-heading">
                           <button
                             @click="toggleAccordion"
@@ -152,7 +210,7 @@
                         />
                       </div>
                   </div>
-                  <div  class="accordion-panel">
+                  <div  class="accordion-panel" id="5">
                       <h2 id="panel5-heading">
                           <button
                             @click="toggleAccordion"
@@ -181,7 +239,7 @@
                         />
                       </div>
                   </div>
-                  <div class="accordion-panel">
+                  <div class="accordion-panel" id="6">
                       <h2 id="panel6-heading">
                           <button
                             @click="toggleAccordion"
@@ -324,6 +382,11 @@
   /* border: 3px solid orange; */
 }
 
+.accordion-panel span{
+  color: var(--color-gold);
+  font-size: 1.5em;
+}
+
 /* .accordion-panel:nth-child(1){
   --_panel-color:red;
 }
@@ -338,6 +401,11 @@
 .accordion-panel:has([aria-expanded="true"]){
   /* flex-basis: 500%; */
   flex-basis: clamp(15rem, 40vh, 20rem);
+}
+
+.accordion-panel > p{
+  transform: translate(2rem);
+  opacity: 0;
 }
 
 .accordion-image{
