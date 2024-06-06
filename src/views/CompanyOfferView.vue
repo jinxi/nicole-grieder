@@ -1,60 +1,82 @@
-<script>
-  // const accordion = document.querySelector(".accordion");
+<script defer>
+const fetchData = async() => {
+  try{
+    const accordion = document.querySelector(".accordion");
+    accordion.addEventListener('click', (e)=>{
+      // console.log("CLICK!!!");
+      // console.log(e.target);
+    });
+  }catch(error){
+    console.error('Error fetching data: ',error);
+  }
+};
 
-  // accordion.addEventListener('click', (e)=>{
-  //   console.log(e.target);
-  // });
 </script>
+<!-- <script src="./../js/accordion.js" setup></script> -->
 
 <script setup>
-        defineProps(['data']);
-        // create array of icons according to the panel id
-        var iconList = [];
-          iconList[0] = '#add';
-        
+  import { ref, onMounted } from 'vue';
 
-        function toggleAccordion(panelClicked){
-            console.log(panelClicked.target.closest(".accordion-panel"));
-            // todo: make dynamic sometime
-            const index = panelClicked.target.closest(".accordion-panel").id;
-            const panelToToggle = panelClicked.target.closest(".accordion-trigger");
-            // const contentToToggle = panelCliecked.target.closest(".accordion-content");
-            //if open-> close; if close -> open
-            // console.log(panelToToggle.getAttribute('aria-expanded'));
-            
-            const panelContent = panelToToggle.parentElement.parentElement.querySelector("div");
-            const panelIcon = panelToToggle.querySelector("use");
 
-            if(panelIcon.getAttribute('xlink:href') != '#close'){
-              iconList[index] = panelIcon.getAttribute('xlink:href');
-              console.log("Icon added to the iconList: " + iconList[index]);
-            }
-            console.log(iconList);
+  const data = ref(null);
 
-            const panelStatus = panelToToggle.getAttribute('aria-expanded');
-            console.log(panelStatus);
-            if(panelStatus==='true'){
-                // closes the panel
-                panelToToggle.setAttribute('aria-expanded', false);
-                panelContent.setAttribute('aria-hidden', true);
-                // check if an icon is set in the panel
-                if(iconList[index]==''){
-                  panelIcon.setAttribute('xlink:href', iconList[0]);
-                  console.warn("icon of clicked panel was empty, icon got set to default add icon. to use custom icon, please set the xlink:href in the clicked panel.");
-                }else{
-                  panelIcon.setAttribute('xlink:href', iconList[index]);
-                }
-                console.log(panelIcon);
-                console.log("-- closed the panel -- ");
-            }else{
-                // opens the panel
-                panelToToggle.setAttribute('aria-expanded', true);
-                panelContent.setAttribute('aria-hidden', false);
-                panelIcon.setAttribute('xlink:href','#close');
-                console.log(panelIcon);
-                console.log("-- opened the panel -- ");
-            }
-        }
+  try {
+    onMounted(async () => {
+      // Your setup code that might throw an error
+      data.value = await fetchData();
+    });
+  } catch (error) {
+    console.error('Error in setup function:', error);
+  }
+
+  // defineProps(['data']);
+
+  // create array of icons according to the panel id
+  var iconList = [];
+  iconList[0] = '#add';        
+
+  function toggleAccordion(panelClicked){
+      // console.log(panelClicked.target.closest(".accordion-panel"));
+      // todo: make dynamic sometime
+      const index = panelClicked.target.closest(".accordion-panel").id;
+      const panelToToggle = panelClicked.target.closest(".accordion-trigger");
+      // const contentToToggle = panelCliecked.target.closest(".accordion-content");
+      //if open-> close; if close -> open
+      // console.log(panelToToggle.getAttribute('aria-expanded'));
+      
+      const panelContent = panelToToggle.parentElement.parentElement.querySelector("div");
+      const panelIcon = panelToToggle.querySelector("use");
+
+      if(panelIcon.getAttribute('xlink:href') != '#close'){
+        iconList[index] = panelIcon.getAttribute('xlink:href');
+        // console.log("Icon added to the iconList: " + iconList[index]);
+      }
+      // console.log(iconList);
+
+      const panelStatus = panelToToggle.getAttribute('aria-expanded');
+      // console.log(panelStatus);
+      if(panelStatus==='true'){
+          // closes the panel
+          panelToToggle.setAttribute('aria-expanded', false);
+          panelContent.setAttribute('aria-hidden', true);
+          // check if an icon is set in the panel
+          if(iconList[index]==''){
+            panelIcon.setAttribute('xlink:href', iconList[0]);
+            console.warn("icon of clicked panel was empty, icon got set to default add icon. to use custom icon, please set the xlink:href in the clicked panel.");
+          }else{
+            panelIcon.setAttribute('xlink:href', iconList[index]);
+          }
+          // console.log(panelIcon);
+          // console.log("-- closed the panel -- ");
+      }else{
+          // opens the panel
+          panelToToggle.setAttribute('aria-expanded', true);
+          panelContent.setAttribute('aria-hidden', false);
+          panelIcon.setAttribute('xlink:href','#close');
+          // console.log(panelIcon);
+          // console.log("-- opened the panel -- ");
+      }
+  }
 
 </script>
 
@@ -97,7 +119,7 @@
                           @click="toggleAccordion"
                           class="accordion-trigger"
                           aria-controls="panel1-content"
-                          aria-expanded="true"
+                          aria-expanded="false"
                           >
                             <span id="panel1-title">Analyse</span>
                             <svg class="accordion-icon">
@@ -116,7 +138,7 @@
                       <!-- todo: use webp compression -->
                       <img 
                         class="accordion-image"
-                        src="./../assets/img/animal/IMG_20230324_092538.jpg"
+                        src="./../assets/img/animal/IMG_20230324_092538-2.jpg"
                         alt="Ladybug on green leave"
                       />
                     </div>
@@ -147,7 +169,7 @@
                         <p>In der Nachbearbeitung wird analysiertes in einem möglichen Konzept verfasst. Es wird der IST-Zustand des Teams und dessen Herausforderung festgehalten. Es werden Lösungsansätze aufgelistet und Ziele definiert.</p>
                         <img 
                           class="accordion-image"
-                          src="./../assets/img/animal/IMG_20231030_112151.jpg"
+                          src="./../assets/img/animal/IMG_20231030_112151-2.jpg"
                           alt="Ladybug on green leave"
                         />
                       </div>
@@ -176,7 +198,7 @@
                       <p>In der Massnahme legen wir ein bis 2 konkrete Ziele fest und erarbeiten Methoden/Strategien zu dessen Umsetzung.</p>
                       <img 
                         class="accordion-image"
-                        src="./../assets/img/animal/IMG_20231029_105322.jpg"
+                        src="./../assets/img/animal/IMG_20231029_105322-2.jpg"
                         alt="Ladybug on green leave"
                       />
                     </div>
@@ -205,7 +227,7 @@
                         <p>In der Massnahmenbesprechung wird die Massnahme vorgestellt und etwaige Anpassungen vorgenommen. Spielregeln werden aufgestellt und das Kommittment der einzelnen Mitarbeiter wird eingeholt.</p>
                         <img 
                           class="accordion-image"
-                          src="./../assets/img/animal/IMG_20231102_123030.jpg"
+                          src="./../assets/img/animal/IMG_20231102_123230-2.jpg"
                           alt="Ladybug on green leave"
                         />
                       </div>
@@ -234,7 +256,7 @@
                         <p>In der Begleitungsphase werden die neuen Routinen geprüft, denn es braucht einige Zeit bis sich alle an den neuen Rhythmus gewöhnt haben und ihn konsequent umsetzen. Hier dreht sich es vor allem um die Frage, was geht schon gut, womit haben die Mitarbeiter noch Mühe. Die Begleitung dauert 2 Monate und kann dann vom Team selbstgetragen werden.</p>
                         <img 
                           class="accordion-image"
-                          src="./../assets/img/animal/IMG_20231102_123230.jpg"
+                          src="./../assets/img/animal/IMG_20231102_123030-2.jpg"
                           alt="Ladybug on green leave"
                         />
                       </div>
@@ -263,7 +285,7 @@
                         <p>Mittels eines kurzen Fragebogens, holen wir uns gerne das Feedback der Mitarbeiter und der Firma zu unserer Leistung ab, denn auch wir sind an stetiger Verbesserung interessiert.</p>
                         <img 
                           class="accordion-image"
-                          src="./../assets/img/animal/IMG_20231102_135923.jpg"
+                          src="./../assets/img/animal/IMG_20231102_135923-2.jpg"
                           alt="Ladybug on green leave"
                         />
                       </div>
@@ -358,10 +380,11 @@
 .accordion{
   --_button-size: 3rem;
   --_panel-padding: 0.75rem;
+  --_panel-gap: 1rem;
 
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  gap: var(--_panel-gap);
   /* border: 3px solid white; */
 }
 .accordion *{
@@ -372,40 +395,40 @@
   position: relative;
   /* needs isolation, because in app there is a background set */
   isolation: isolate; 
-  /* max-height: 100px; */
   flex-basis: calc(var(--_panel-padding)*2 + var(--_button-size));
   overflow: hidden;
   padding: var(--_panel-padding);
-
+  padding-right: calc(var(--_panel-padding)*4);
   border-radius: calc((var(--_panel-padding)*2 + var(--_button-size))/2);
 
+  transition: flex-basis 400ms;
   /* border: 3px solid orange; */
+}
+
+.accordion-panel:has([aria-expanded="true"]){
+  flex-basis: clamp(15rem, 40vh, 20rem); 
+  /* min, val, max 
+  val is the preferred value if result is between min and max values */
 }
 
 .accordion-panel span{
   color: var(--color-gold);
   font-size: 1.5em;
+  text-transform: uppercase;
 }
 
-/* .accordion-panel:nth-child(1){
-  --_panel-color:red;
-}
-.accordion-panel:nth-child(2){
-  --_panel-color:blue;
-}
-
-.accordion-content{
-  border: 2px solid blue;
-} */
-
-.accordion-panel:has([aria-expanded="true"]){
-  /* flex-basis: 500%; */
-  flex-basis: clamp(15rem, 40vh, 20rem);
-}
-
-.accordion-panel > p{
-  transform: translate(2rem);
+.accordion-content > p{
+  color: var(--color-gold-light);
+  /* font-size: 0.9em; */
+  margin-left: calc(var(--_button-size) + var(--_panel-gap));
+  transform: translateY(2rem);
   opacity: 0;
+  transition: transform 400ms, opacity 400ms;
+}
+
+.accordion-panel:has([aria-expanded="true"]) .accordion-content > p {
+  transform: translateY(0);
+  opacity: 1;
 }
 
 .accordion-image{
@@ -415,12 +438,14 @@
   height: 100%;
   object-fit: cover;
   z-index: -1;
+  filter: brightness(0.5);
+  /* transition: filter 400ms; */
 }
 
 .accordion-trigger{
   display: flex;
   align-items: center;
-  gap: 1rem;
+  gap: var(--_panel-gap);
   flex-direction: row-reverse;
   background: transparent;
   border: 0;
@@ -436,6 +461,15 @@
   aspect-ratio: 1/1;
   padding: var(--_panel-padding);
   border-radius: 50%;
+  rotate: 0 deg;
+
+  transition: rotate 400ms;
+}
+
+.accordion-panel:has([aria-expanded="true"]) .accordion-icon {
+  rotate: 360deg;
+
+  transition: rotate 400ms;
 }
 
 </style>
