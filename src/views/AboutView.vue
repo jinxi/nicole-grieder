@@ -31,7 +31,7 @@
         <div class="container">
           <div class="gallery">
             <img class="--round-boarders" src="./../assets/pdf/LTC-Zertifikat.jpg" alt="LTC Zertifikat Nicole Grieder">
-            <img class="--round-boarders" src="./../assets/pdf/MasterOfDisaster.jpg" alt="Master of Science in Engineering Nicole Grieder">
+            <img class="--round-boarders" src="./../assets/pdf/Master.jpg" alt="Master of Science in Engineering Nicole Grieder">
             <img class="--round-boarders" src="./../assets/pdf/Bachelor.jpg" alt="Bachelor of Science in Engineering Nicole Grieder">
           </div>
       </div>
