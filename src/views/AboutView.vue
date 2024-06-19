@@ -1,6 +1,49 @@
-<script>
-</script>
+<script defer>
+  const fetchData = async() => {
+    try{
+      const dialog = document.querySelector("#modal");
+      // console.log("DIALOG!!!");
+      // console.log(dialog);
 
+      const showDialog = document.querySelector(".showDialog");
+      // console.log("showDialog!!!");
+      // console.log(showDialog);
+
+      const closeDialog = dialog.querySelector(".closeDialog");
+      // console.log("closeDialog!!!");
+      // console.log(closeDialog);
+
+      showDialog.addEventListener('click', (e)=>{
+        dialog.showModal();
+        console.log("CLICK!!!");
+        console.log(e.target);
+      });
+
+      closeDialog.addEventListener("click", ()=>{
+        // console.log("CLICK!!!");
+        // console.log(e.target);
+        dialog.close();
+      });
+    }catch(error){
+      console.error('Error fetching data: ',error);
+    }
+  };
+</script>
+<script setup>
+  import { ref, onMounted } from 'vue';
+
+
+  const data = ref(null);
+
+  try {
+    onMounted(async () => {
+      // Your setup code that might throw an error
+      data.value = await fetchData();
+    });
+  } catch (error) {
+    console.error('Error in setup function:', error);
+  }
+</script>
 
 <template>
   <section class="hero">
@@ -33,12 +76,79 @@
             <img class="--round-boarders" src="./../assets/pdf/LTC-Zertifikat.jpg" alt="LTC Zertifikat Nicole Grieder">
             <img class="--round-boarders" src="./../assets/pdf/Master.jpg" alt="Master of Science in Engineering Nicole Grieder">
             <img class="--round-boarders" src="./../assets/pdf/Bachelor.jpg" alt="Bachelor of Science in Engineering Nicole Grieder">
+            <button class="showDialog">Open the modal</button>
+            <dialog id="modal">
+              <h2>A pretty standard modal</h2>
+              <button class="closeDialog">Close the modal</button>
+            </dialog>
           </div>
       </div>
   </section>
 </template>
 
 <style>
+dialog {
+  display: none;
+  opacity: 0;
+  translate: 0 25vh;
+  transition-property: overlay display opacity;
+  transition-duration: 1s;
+  transition-behavior: allow-discrete;
+  /* animation: vanish 1s; */
+}
+
+dialog[open]{
+  display: block;
+  opacity: 1;
+  translate: 0 0;
+  /* animation: appear 1s; */
+}
+
+@starting-style{
+  dialog[open]{
+    opacity: 0;
+    translate: 0 -25vh;
+  }
+}
+
+dialog::backdrop{
+  transition-property: overlay display opacity;
+  transition-duration: 1s;
+  transition-behavior: allow-discrete;
+  opacity: 0;
+  background-image: linear-gradient(45deg, red, blue);
+}
+
+dialog[open]::backdrop{
+  opacity: 0.75;
+}
+
+@starting-style{
+  dialog[open]::backdrop{
+    opacity: 0;
+  }
+}
+
+/* @keyframes appears {
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
+}
+
+@keyframes vanish {
+  from{
+    display: block;
+    opacity: 1;
+  }
+  to{
+    display: none;
+    opacity: 0;
+  }
+} */
+
 .gallery{
   display: grid;
   grid-template-columns: 1fr;
