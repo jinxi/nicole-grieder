@@ -77,7 +77,7 @@
             <img class="--round-boarders" src="./../assets/pdf/Master.jpg" alt="Master of Science in Engineering Nicole Grieder">
             <img class="--round-boarders" src="./../assets/pdf/Bachelor.jpg" alt="Bachelor of Science in Engineering Nicole Grieder">
             <button class="showDialog">Open the modal</button>
-            <dialog id="modal">
+            <dialog class="modal" id="modal">
               <h2>A pretty standard modal</h2>
               <button class="closeDialog">Close the modal</button>
             </dialog>
@@ -90,7 +90,7 @@
 dialog {
   display: none;
   opacity: 0;
-  translate: 0 25vh;
+  translate: 40vw 100vh;
   transition-property: overlay display opacity;
   transition-duration: 1s;
   transition-behavior: allow-discrete;
@@ -99,15 +99,18 @@ dialog {
 
 dialog[open]{
   display: block;
+  max-width: 50ch;
+  padding: 1em;
+
   opacity: 1;
-  translate: 0 0;
+  translate: 40vw 40vh;
   /* animation: appear 1s; */
 }
 
 @starting-style{
   dialog[open]{
     opacity: 0;
-    translate: 0 -25vh;
+    translate: 40vw 100vh;
   }
 }
 
@@ -116,7 +119,8 @@ dialog::backdrop{
   transition-duration: 1s;
   transition-behavior: allow-discrete;
   opacity: 0;
-  background-image: linear-gradient(45deg, red, blue);
+  background-color: var(--color-petrol-light);
+  /* background-image: linear-gradient(45deg, red, blue); */
 }
 
 dialog[open]::backdrop{
