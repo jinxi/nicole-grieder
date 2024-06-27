@@ -121,7 +121,7 @@ const fetchData = async() => {
                           aria-controls="panel1-content"
                           aria-expanded="false"
                           >
-                            <span id="panel1-title">Analyse</span>
+                            <span id="panel1-title" class="accordion-title">Analyse</span>
                             <svg class="accordion-icon">
                                 <use xlink:href="#eyeglasses"></use>
                             </svg>
@@ -138,7 +138,7 @@ const fetchData = async() => {
                       <!-- todo: use webp compression -->
                       <img 
                         class="accordion-image"
-                        src="./../assets/img/animal/IMG_20230324_092538-2.jpg"
+                        src="./../assets/img/graphics/team-structure.JPG"
                         alt="Ladybug on green leave"
                       />
                     </div>
@@ -153,7 +153,7 @@ const fetchData = async() => {
                             aria-controls="panel2-content"
                             aria-expanded="false"
                             >
-                              <span id="panel2-title">Nachbearbeitung</span>
+                              <span id="panel2-title" class="accordion-title">Nachbearbeitung</span>
                               <svg class="accordion-icon">
                                   <use xlink:href="#psychology"></use>
                               </svg>
@@ -169,7 +169,7 @@ const fetchData = async() => {
                         <p>In der Nachbearbeitung wird analysiertes in einem möglichen Konzept verfasst. Es wird der IST-Zustand des Teams und dessen Herausforderung festgehalten. Es werden Lösungsansätze aufgelistet und Ziele definiert.</p>
                         <img 
                           class="accordion-image"
-                          src="./../assets/img/animal/IMG_20231030_112151-2.jpg"
+                          src="./../assets/img/graphics/keyboard.jpg"
                           alt="Ladybug on green leave"
                         />
                       </div>
@@ -182,7 +182,7 @@ const fetchData = async() => {
                           aria-controls="panel3-content"
                           aria-expanded="false"
                           >
-                            <span id="panel3-title">Massnahme</span>
+                            <span id="panel3-title" class="accordion-title">Massnahme</span>
                             <svg class="accordion-icon">
                                 <use xlink:href="#sports"></use>
                             </svg>
@@ -198,7 +198,7 @@ const fetchData = async() => {
                       <p>In der Massnahme legen wir ein bis 2 konkrete Ziele fest und erarbeiten Methoden/Strategien zu dessen Umsetzung.</p>
                       <img 
                         class="accordion-image"
-                        src="./../assets/img/animal/IMG_20231029_105322-2.jpg"
+                        src="./../assets/img/graphics/brain-idea.JPG"
                         alt="Ladybug on green leave"
                       />
                     </div>
@@ -211,7 +211,7 @@ const fetchData = async() => {
                             aria-controls="panel4-content"
                             aria-expanded="false"
                             >
-                              <span id="panel4-title">Massnahmenbesprechung</span>
+                              <span id="panel4-title" class="accordion-title">Massnahmenbesprechung</span>
                               <svg aria-hidden="true" class="accordion-icon">
                                   <use xlink:href="#communication"></use>
                               </svg>
@@ -227,7 +227,7 @@ const fetchData = async() => {
                         <p>In der Massnahmenbesprechung wird die Massnahme vorgestellt und etwaige Anpassungen vorgenommen. Spielregeln werden aufgestellt und das Kommittment der einzelnen Mitarbeiter wird eingeholt.</p>
                         <img 
                           class="accordion-image"
-                          src="./../assets/img/animal/IMG_20231102_123230-2.jpg"
+                          src="./../assets/img/graphics/teamwork-zahnrad2.JPG"
                           alt="Ladybug on green leave"
                         />
                       </div>
@@ -240,7 +240,7 @@ const fetchData = async() => {
                             aria-controls="panel5-content"
                             aria-expanded="false"
                             >
-                              <span id="panel5-title">Begleitung</span>
+                              <span id="panel5-title" class="accordion-title">Begleitung</span>
                               <svg aria-hidden="true" class="accordion-icon">
                                   <use xlink:href="#directions_walk"></use>
                               </svg>
@@ -256,7 +256,7 @@ const fetchData = async() => {
                         <p>In der Begleitungsphase werden die neuen Routinen geprüft, denn es braucht einige Zeit bis sich alle an den neuen Rhythmus gewöhnt haben und ihn konsequent umsetzen. Hier dreht sich es vor allem um die Frage, was geht schon gut, womit haben die Mitarbeiter noch Mühe. Die Begleitung dauert 2 Monate und kann dann vom Team selbstgetragen werden.</p>
                         <img 
                           class="accordion-image"
-                          src="./../assets/img/animal/IMG_20231102_123030-2.jpg"
+                          src="./../assets/img/graphics/teamwork-mountain.JPG"
                           alt="Ladybug on green leave"
                         />
                       </div>
@@ -269,7 +269,7 @@ const fetchData = async() => {
                             aria-controls="panel6-content"
                             aria-expanded="false"
                             >
-                              <span id="panel6-title">Feedback</span>
+                              <span id="panel6-title" class="accordion-title">Feedback</span>
                               <svg aria-hidden="true" class="accordion-icon">
                                   <use xlink:href="#celebration"></use>
                               </svg>
@@ -285,8 +285,8 @@ const fetchData = async() => {
                         <p>Mittels eines kurzen Fragebogens, holen wir uns gerne das Feedback der Mitarbeiter und der Firma zu unserer Leistung ab, denn auch wir sind an stetiger Verbesserung interessiert.</p>
                         <img 
                           class="accordion-image"
-                          src="./../assets/img/animal/IMG_20231102_135923-2.jpg"
-                          alt="Ladybug on green leave"
+                          src="./../assets/img/graphics/thumbsup.JPG"
+                          alt="Thumbs-up"
                         />
                       </div>
                   </div>
@@ -391,6 +391,22 @@ const fetchData = async() => {
   margin: 0;
 }
 
+@media(min-width: 900px){
+  .accordion{
+    flex-direction: row;
+    height: 30rem;
+  }
+}
+
+.accordion-trigger{
+  outline: 0;
+  /* see focus:within */
+}
+
+.accordion-panel:focus-within{
+  outline: 3px solid var(--color-gold);
+}
+
 .accordion-panel{
   position: relative;
   /* needs isolation, because in app there is a background set */
@@ -401,31 +417,63 @@ const fetchData = async() => {
   padding-right: calc(var(--_panel-padding)*4);
   border-radius: calc((var(--_panel-padding)*2 + var(--_button-size))/2);
 
-  transition: flex-basis 400ms;
   /* border: 3px solid orange; */
+}
+
+/* test in inspector: command shift p : search for reduced modition */
+@media (prefers-reduced-motion: no-preference){
+  .accordion-panel{
+    transition: flex-basis 400ms, flex-grow 400ms;
+  }
 }
 
 .accordion-panel:has([aria-expanded="true"]){
   flex-basis: clamp(15rem, 40vh, 20rem); 
   /* min, val, max 
   val is the preferred value if result is between min and max values */
+  flex-grow: 1;
 }
 
-.accordion-panel span{
+.accordion-title{
   color: var(--color-gold);
   font-size: 1.5em;
   text-transform: uppercase;
+
+  position: relative;
+/* prefents it from going behind with z-index in the media query below*/
+  isolation: isolate; 
+  display: grid;
+  align-items: center;
 }
 
+@media(max-width: 900px){
+  .accordion-title::after{
+    content: "";
+    position: absolute;
+    /* top: 0; */
+    left: calc((var(--_panel-gap) + var(--_button-size))*-1);
+
+    width: calc(100% + (var(--_button-size))*2);
+    height: var(--_button-size);
+    background: hsl(var(--color-petrol-light-hsl),0.6);
+    z-index: -1;
+    border-radius: 100vw;
+  }
+}
 .accordion-content > p{
   color: var(--color-gold-light);
   /* font-size: 0.9em; */
   margin-left: calc(var(--_button-size) + var(--_panel-gap));
   transform: translateY(2rem);
   opacity: 0;
-  transition: transform 400ms, opacity 400ms;
 }
+/* test in inspector: command shift p : search for reduced modition */
+@media (prefers-reduced-motion: no-preference){
+  .accordion-panel:has([aria-expanded="true"]) .accordion-content > p {
+    transition: transform 400ms 400ms, opacity 400ms 400ms;
 
+  }
+}
 .accordion-panel:has([aria-expanded="true"]) .accordion-content > p {
   transform: translateY(0);
   opacity: 1;
@@ -464,6 +512,7 @@ const fetchData = async() => {
   rotate: 0 deg;
 
   transition: rotate 400ms;
+  z-index: 10;
 }
 
 .accordion-panel:has([aria-expanded="true"]) .accordion-icon {
