@@ -31,7 +31,7 @@
             <h1 class="section-title section-title--dark">Coaching Formate</h1>
             <div class="salespoint row">
                 <div class="salespoint__card">
-                    <h2 class="salespoint__card__title">Laser-Coaching</h2>
+                    <h2 class="salespoint__card__title">Team-Fit</h2>
                     <p>Ein Laser Coaching eignet sich für:
                         <ul class="inside">
                             <li>Personen die sehr wenig Zeit haben</li>
@@ -41,19 +41,7 @@
                     </p>
                 </div>
                 <div class="salespoint__card">
-                    <h2 class="salespoint__card__title">Kompakt-Coaching</h2>
-                    <p>Für umfangreichere Themen, empfehle ich das Kompakt-Coaching. Es eignet sich bei Problemen, die mehr als eine Session benötigen. Sie haben einen durchschnittlichen Umfang von 2-5 Sessions.
-                        Themen können unteranderem folgende sein:
-                        <ul class="inside">
-                            <li>Partnerschafts&shy;krisen</li>
-                            <li>Lebenskrisen/ Weggabelungen</li>
-                            <li>berufliche Klärungs&shy;prozesse</li>
-                            <li>Themen mit Kindern und Jugendlichen</li>
-                        </ul>
-                    </p>
-                </div>
-                <div class="salespoint__card">
-                    <h2 class="salespoint__card__title">Coaching-Pakete</h2>
+                    <h2 class="salespoint__card__title">Workshops</h2>
                     <p>Coaching-Pakete sind vorbereitete Coaching&shy;prozesse zu speziellen Lebensthemen. Sie beinhalten eine feste Anzahl von Sessions und haben eine klare Struktur, die auf die entsprechenden Lebensthemen angepasst werden.
                         Zum Beispiel in folgenden Lebensbereichen:
                         <ul class="inside">
@@ -66,8 +54,16 @@
                     </p>
                 </div>
                 <div class="salespoint__card">
-                    <h2 class="salespoint__card__title">Begleitung</h2>
-                    <p>Bei der Begleitung erhaltest du Coachings über einen vertraglich geregelten Zeitraum. Ich bin sowohl in der Session, sowohl auf Abruf verfügbar.</p>
+                    <h2 class="salespoint__card__title">Einzel-Coachings</h2>
+                    <p>Für umfangreichere Themen, empfehle ich das Kompakt-Coaching. Es eignet sich bei Problemen, die mehr als eine Session benötigen. Sie haben einen durchschnittlichen Umfang von 2-5 Sessions.
+                        Themen können unteranderem folgende sein:
+                        <ul class="inside">
+                            <li>Partnerschafts&shy;krisen</li>
+                            <li>Lebenskrisen/ Weggabelungen</li>
+                            <li>berufliche Klärungs&shy;prozesse</li>
+                            <li>Themen mit Kindern und Jugendlichen</li>
+                        </ul>
+                    </p>
                 </div>
             </div>
         </div>
