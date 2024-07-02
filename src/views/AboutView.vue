@@ -60,7 +60,7 @@
           
           </div>
 
-          <div class="col">
+          <div class="col seperator_mobile">
             <h1 class="section-title section-title--dark">Über mich</h1>
             <p>Ich bin knappe 40 Jahre jung und Mutter zweier Kinder. Habe eine Kauf&shy;männische und eine Informatik Ausbildung. 
               War 15 Jahr bis 2023 in Österreich. Habe einen Bachelor in Informations&shy;technologie und Telekommunikation und einen Master in Game&shy;engineering und Simulation.
@@ -79,6 +79,7 @@
             <button class="showDialog">Open the modal</button>
             <dialog class="modal" id="modal">
               <h2>A pretty standard modal</h2>
+              <div class="picturebox"></div>
               <button class="closeDialog">Close the modal</button>
             </dialog>
           </div>
@@ -131,6 +132,17 @@ dialog[open]::backdrop{
   dialog[open]::backdrop{
     opacity: 0;
   }
+}
+
+.picturebox{
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 20px;
+  height: 20px;
+  background-color: red;
+  background-image: src('./../assets/pdf/LTC-Zertifikat.jpg');
+  background-size: contain;
 }
 
 /* @keyframes appears {

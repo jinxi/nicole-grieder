@@ -18,7 +18,7 @@
                     <p>Lieber Mensch, vielen Dank für deine Zeit und dein Interesse, einen Blick auf meine Webseite zu werfen. Bitte sei noch etwas geduldig, denn sie ist noch im Aufbau. 
                         Ich bin mit der finalen Programmierung beschäftigt, kann dir jedoch erste Einblicke geben.</p>
                 </div>
-                <div class="col">
+                <div class="col seperator_mobile">
                     <p>Mittlerweile sind die verschieden Formate des Coachings ersichtlich, ebenso eine Kurzvorstellung zu mir.</p>
                     <!-- <button></button> -->
                 </div>
@@ -92,7 +92,7 @@
             
             </div>
 
-            <div class="col">
+            <div class="col seperator_mobile">
                 <h1 class="section-title section-title--dark">Über mich</h1>
                 <p class="text--light">Ich bin Nicole Grieder ein lebensfroher, willensstarker und bunter Mensch, mit vielen Interessen und Fähigkeiten. 
                     Sehr gerne setze ich mich mit deinen Problemen oder mit Team Problemen in deiner Firma auseinander. 

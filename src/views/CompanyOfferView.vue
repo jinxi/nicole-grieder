@@ -91,26 +91,14 @@ const fetchData = async() => {
   </section>
   <section class="section-company">
       <div class="container row">
-        <div class="col">
-            <img class="--round-boarders" id="myImg" src="./../assets/img/profil/IMG_20240424_111007.jpg" alt="Profilbild">
-        </div>
-
-        <div class="col">
-          <h1 class="section-title section-title--dark">Über mich</h1>
-          <p>Ich bin knappe 40 Jahre jung und Mutter zweier Kinder. Habe eine Kauf&shy;männische und eine Informatik Ausbildung. 
-            War 15 Jahr bis 2023 in Österreich. Habe einen Bachelor in Informations&shy;technologie und Telekommunikation und einen Master in Game&shy;engineering und Simulation.
-          </p>
-          <p>Im 2023 habe ich die Ausbildung <a href="https://lifetrust-coach.com/" target="_blank">"Life Trust Coach"</a> von Veit Lindau mit all den 12 Prüfungen erfolgreich abgeschlossen.
-          </p>
-          <p>Am liebsten arbeite ich als Selbständige für Firmen mit IT und/oder Entwicklerteams, weil ich da meine fachlichen Kompetenzen vereinen kann und somit einen grossen Gewinn für die Firmen bin.
-          </p>
-        </div>
+        
       </div>
     </section>
-    <section>
+    <section class="section-accordion">
         <div class="container">
-          <div class="section-accordion">
+          <div>
               <div class="accordion">
+                <h1 class="section-title section-title--dark">Paket Team-Fit</h1>
                   <div class="accordion-panel" id="1">
                     <!-- connect the heading id with the aria-labelledby to interact. 
                         with role you can jump to content, this also needs the labelledby attribut -->
@@ -373,7 +361,8 @@ const fetchData = async() => {
 <style>
 .section-accordion{
   /* max-width: 50rem; */
-  margin-inline: auto;
+  /* margin-inline: auto; */
+  background-color: var(--color-gray);
   /* padding-inline: 1rem; */
 }
 
@@ -390,13 +379,13 @@ const fetchData = async() => {
 .accordion *{
   margin: 0;
 }
-
+/* 
 @media(min-width: 900px){
   .accordion{
     flex-direction: row;
     height: 30rem;
   }
-}
+} */
 
 .accordion-trigger{
   outline: 0;
@@ -446,7 +435,7 @@ const fetchData = async() => {
   align-items: center;
 }
 
-@media(max-width: 900px){
+/* @media(max-width: 900px){ */
   .accordion-title::after{
     content: "";
     position: absolute;
@@ -459,7 +448,8 @@ const fetchData = async() => {
     z-index: -1;
     border-radius: 100vw;
   }
-}
+/* } */
+
 .accordion-content > p{
   color: var(--color-gold-light);
   /* font-size: 0.9em; */

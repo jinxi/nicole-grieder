@@ -16,7 +16,7 @@ h1, h2{
   font-weight: 900;
   font-style: normal;
   line-height: 1.1;
-  padding-bottom: 0.2em;
+  padding-bottom: 0.5em;
 }
 
 p{
@@ -24,7 +24,7 @@ p{
 }
 
 section{
-  padding: 4em 0;
+  padding: 2em 0;
 }
 .container{
   width: 85%;
@@ -54,6 +54,12 @@ ul.inside{
 }
 section{
   padding: 4em 0;
+}
+
+@media(max-width: 900px){
+  .seperator_mobile{
+    padding-top: 1em;
+  }
 }
 
 nav ul,a{
