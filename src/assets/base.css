@@ -1,0 +1,87 @@
+/* color palette from <https://github.com/vuejs/theme> */
+:root{
+  --color-petrol-dark: #133f44;
+  --color-petrol-dark-hsl: 186.12, 56.32%, 17.06%;
+  --color-petrol-light: #2c8791;
+  --color-petrol-light-hsl: 185.94, 53.44%, 37.06%;
+  --color-gold: #ce944f;
+  --color-gold-hsl: 32.6, 56.44%, 55.88%;
+  --color-gold-light: #ded0be;
+  --color-gray: #444;
+  --color-gray-light: #ccc;
+  --color-dark: #1e2020;
+  --color-dark-hsl: 180, 3.23%, 12.16%;
+  --color-white: aliceblue;
+
+  --media-mobile-width: 900px;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-petrol-dark: #133f44;
+    --color-petrol-dark-hsl: 186.12, 56.32%, 17.06%;
+    --color-petrol-light: #2c8791;
+    --color-petrol-light-hsl: 185.94, 53.44%, 37.06%;
+    --color-gold: #ce944f;
+    --color-gold-hsl: 32.6, 56.44%, 55.88%;
+    --color-gold-light: #ded0be;
+    --color-gray: #444;
+    --color-gray-light: #ccc;
+    --color-dark: #1e2020;
+    --color-dark-hsl: 180, 3.23%, 12.16%;
+    --color-white: aliceblue;
+  
+    --media-mobile-width: 900px;
+
+  }
+}
+
+*,
+*::before,
+*::after {
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+img{
+  max-width: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.3125rem;
+  line-height: 1.6;
+  color: var(--color-dark);
+  /* min-height: 100vh;
+  color: var(--color-text);
+  background: var(--color-background);
+  transition:
+    color 0.5s,
+    background-color 0.5s;
+  line-height: 1.6;
+  font-family:
+    Inter,
+    -apple-system,
+    BlinkMacSystemFont,
+    'Segoe UI',
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    'Fira Sans',
+    'Droid Sans',
+    'Helvetica Neue',
+    sans-serif;
+  font-size: 15px; */
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
