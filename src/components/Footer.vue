@@ -4,7 +4,7 @@ import { RouterLink } from 'vue-router';
 <template>
     <footer>
         <div class="container row footer">
-            <div class="footer--left"><p>Nicole Grieder<br>Nebenmattstr. 12<br>4431 Bennwil<br><a href="mailto: coaching@nicole-grieder.ch" target="_self" class="nav__link">coaching@nicole-grieder.ch</a></p></div>
+            <div class="footer--left"><p>Nicole Grieder<br>Nebenmattstr. 12<br>4431 Bennwil<br><a href="mailto: office@nicole-grieder.ch" target="_self" class="nav__link">office@nicole-grieder.ch</a></p></div>
             <div class="footer--center">
                 <img src="./../assets/img/LogoTree.png" alt="LogoBaum">
             </div>

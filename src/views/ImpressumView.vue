@@ -13,7 +13,7 @@
       </p>
      
       <h1 class="section-title section-title--dark">Kontakt</h1>
-     <p> coaching@nicole-grieder.ch
+     <p> support@nicole-grieder.ch
     </p>
    
       <h1 class="section-title section-title--dark">Webseite</h1>

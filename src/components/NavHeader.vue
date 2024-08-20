@@ -58,7 +58,7 @@ import { RouterLink } from 'vue-router';
       </transition>
       <transition name="fade" class="navigation" v-show="!mobile">
        <ul class="nav__list nav__list--primary">
-        <li class="nav__item"><RouterLink class="nav__link" to="/">Home</RouterLink></li>
+        <li class="nav__item"><RouterLink class="nav__link" to="/home">Home</RouterLink></li>
         <li class="nav__item"><RouterLink class="nav__link" to="/about">Über mich</RouterLink></li>
         <li class="nav__item"><RouterLink class="nav__link" to="/companyoffer">Firmen Angebot</RouterLink></li>
         <!-- <li class="nav__item"><RouterLink class="nav__link" to="/datenschutz">Datenschutz</RouterLink></li>
@@ -77,7 +77,7 @@ import { RouterLink } from 'vue-router';
       <transition name="mobile-nav" v-on:click="toggleMobileNav">
         <ul class="dropdown-nav" v-show="mobileNav">
           
-          <li class="nav__item"><RouterLink class="nav__link" to="/">Home</RouterLink></li>
+          <li class="nav__item"><RouterLink class="nav__link" to="/home">Home</RouterLink></li>
           <li class="nav__item"><RouterLink class="nav__link" to="/about">Über mich</RouterLink></li>
           <li class="nav__item"><RouterLink class="nav__link" to="/companyoffer">Firmen Angebot</RouterLink></li>
           <!-- <li class="nav__item"><RouterLink class="nav__link" to="/datenschutz">Datenschutz</RouterLink></li>
