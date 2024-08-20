@@ -6,7 +6,7 @@
         <div class="container">
             <p class="intro__text">Willkommen auf</p>
             <!-- <h1 class="intro__title">Responsive layouts don’t<br>have to be a struggle</h1> -->
-            <img src="./../assets/img/LogoTransparent.png" alt="Namens Logo Transparent" >
+            <img src="./../assets/img/LogoTransparent_only.png" alt="Namens Logo Transparent" >
         </div>
     </section>
 
