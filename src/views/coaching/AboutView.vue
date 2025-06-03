@@ -55,7 +55,7 @@
   <section class="section-about">
       <div class="container row">
           <div class="col">
-              <img class="--round-boarders" id="myImg" src="./../assets/img/profil/IMG_20240424_111007.jpg" alt="Profilbild">
+              <img class="--round-boarders" id="myImg" src="./../../assets/img/profil/IMG_20240424_111007.jpg" alt="Profilbild">
               <!-- todo: The Modal -->
           
           </div>
@@ -73,9 +73,9 @@
         </div>
         <div class="container">
           <div class="gallery">
-            <img class="--round-boarders" src="./../assets/pdf/LTC-Zertifikat.jpg" alt="LTC Zertifikat Nicole Grieder">
-            <img class="--round-boarders" src="./../assets/pdf/Master.jpg" alt="Master of Science in Engineering Nicole Grieder">
-            <img class="--round-boarders" src="./../assets/pdf/Bachelor.jpg" alt="Bachelor of Science in Engineering Nicole Grieder">
+            <img class="--round-boarders" src="./../../assets/pdf/LTC-Zertifikat.jpg" alt="LTC Zertifikat Nicole Grieder">
+            <img class="--round-boarders" src="./../../assets/pdf/Master.jpg" alt="Master of Science in Engineering Nicole Grieder">
+            <img class="--round-boarders" src="./../../assets/pdf/Bachelor.jpg" alt="Bachelor of Science in Engineering Nicole Grieder">
             <button class="showDialog">Open the modal</button>
             <dialog class="modal" id="modal">
               <h2>A pretty standard modal</h2>
@@ -141,7 +141,7 @@ dialog[open]::backdrop{
   width: 20px;
   height: 20px;
   background-color: red;
-  background-image: src('./../assets/pdf/LTC-Zertifikat.jpg');
+  background-image: src('./../../assets/pdf/LTC-Zertifikat.jpg');
   background-size: contain;
 }
 

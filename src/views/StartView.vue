@@ -19,7 +19,9 @@
                 </div>
                 <div class="col seperator_mobile">
                     <p></p>
-                    <!-- <button></button> -->
+                
+                  <span><a class="link--button --dark" target="_top"><RouterLink to="/property">Rebgasse</RouterLink></a></span>
+                
                 </div>
             </div>
         </div>

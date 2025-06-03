@@ -1,6 +1,6 @@
 <script setup>
 import { RouterView } from 'vue-router'
-import NavHeader from './components/NavHeader.vue';
+import NavHeader from './components/NavHeader_Coaching.vue';
 import Footer from './components/Footer.vue';
 </script>
 

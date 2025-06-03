@@ -12,7 +12,7 @@ const router = createRouter({
     {
       path: '/home',
       name: 'home',
-      component: () => import('../views/HomeView.vue')
+      component: () => import('../views/coaching/HomeView.vue')
     },
     {
       path: '/about',
@@ -20,12 +20,20 @@ const router = createRouter({
       // route level code-splitting
       // this generates a separate chunk (About.[hash].js) for this route
       // which is lazy-loaded when the route is visited.
-      component: () => import('../views/AboutView.vue')
+      component: () => import('../views/coaching/AboutView.vue')
+    },
+    {
+      path: '/property',
+      name: 'property',
+      // route level code-splitting
+      // this generates a separate chunk (About.[hash].js) for this route
+      // which is lazy-loaded when the route is visited.
+      component: () => import('../views/landlord/PropertyView.vue')
     },
     {
       path: '/companyoffer',
       name: 'companyoffer',
-      component: () => import('../views/CompanyOfferView.vue')
+      component: () => import('../views/coaching/CompanyOfferView.vue')
     },
     {
       path: '/datenschutz',

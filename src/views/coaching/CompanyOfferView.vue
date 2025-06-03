@@ -12,7 +12,7 @@ const fetchData = async() => {
 };
 
 </script>
-<!-- <script src="./../js/accordion.js" setup></script> -->
+<!-- <script src="./../../js/accordion.js" setup></script> -->
 
 <script setup>
   import { ref, onMounted } from 'vue';
@@ -126,7 +126,7 @@ const fetchData = async() => {
                       <!-- todo: use webp compression -->
                       <img 
                         class="accordion-image"
-                        src="./../assets/img/graphics/team-structure.jpg"
+                        src="./../../assets/img/graphics/team-structure.jpg"
                         alt="Ladybug on green leave"
                       />
                     </div>
@@ -157,7 +157,7 @@ const fetchData = async() => {
                         <p>In der Nachbearbeitung wird analysiertes in einem möglichen Konzept verfasst. Es wird der IST-Zustand des Teams und dessen Herausforderung festgehalten. Es werden Lösungsansätze aufgelistet und Ziele definiert.</p>
                         <img 
                           class="accordion-image"
-                          src="./../assets/img/graphics/keyboard.jpg"
+                          src="./../../assets/img/graphics/keyboard.jpg"
                           alt="Ladybug on green leave"
                         />
                       </div>
@@ -186,7 +186,7 @@ const fetchData = async() => {
                       <p>In der Massnahme legen wir ein bis 2 konkrete Ziele fest und erarbeiten Methoden/Strategien zu dessen Umsetzung.</p>
                       <img 
                         class="accordion-image"
-                        src="./../assets/img/graphics/brain-idea.jpg"
+                        src="./../../assets/img/graphics/brain-idea.jpg"
                         alt="Ladybug on green leave"
                       />
                     </div>
@@ -215,7 +215,7 @@ const fetchData = async() => {
                         <p>In der Massnahmenbesprechung wird die Massnahme vorgestellt und etwaige Anpassungen vorgenommen. Spielregeln werden aufgestellt und das Kommittment der einzelnen Mitarbeiter wird eingeholt.</p>
                         <img 
                           class="accordion-image"
-                          src="./../assets/img/graphics/teamwork-zahnrad2.jpg"
+                          src="./../../assets/img/graphics/teamwork-zahnrad2.jpg"
                           alt="Ladybug on green leave"
                         />
                       </div>
@@ -244,7 +244,7 @@ const fetchData = async() => {
                         <p>In der Begleitungsphase werden die neuen Routinen geprüft, denn es braucht einige Zeit bis sich alle an den neuen Rhythmus gewöhnt haben und ihn konsequent umsetzen. Hier dreht sich es vor allem um die Frage, was geht schon gut, womit haben die Mitarbeiter noch Mühe. Die Begleitung dauert 2 Monate und kann dann vom Team selbstgetragen werden.</p>
                         <img 
                           class="accordion-image"
-                          src="./../assets/img/graphics/teamwork-mountain.jpg"
+                          src="./../../assets/img/graphics/teamwork-mountain.jpg"
                           alt="Ladybug on green leave"
                         />
                       </div>
@@ -273,7 +273,7 @@ const fetchData = async() => {
                         <p>Mittels eines kurzen Fragebogens, holen wir uns gerne das Feedback der Mitarbeiter und der Firma zu unserer Leistung ab, denn auch wir sind an stetiger Verbesserung interessiert.</p>
                         <img 
                           class="accordion-image"
-                          src="./../assets/img/graphics/thumbsup.jpg"
+                          src="./../../assets/img/graphics/thumbsup.jpg"
                           alt="Thumbs-up"
                         />
                       </div>
