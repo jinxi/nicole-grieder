@@ -28,22 +28,32 @@ export default {
 </script>
 
 <template>
-  <div class="flats-list">
-    <FlatWidget
-      v-for="flat in flats"
-      :key="flat.id"
-      :images="flat.images"
-      :address="flat.address"
-      :price="flat.price"
-      :description="flat.description"
-    />
+<section class="accordion">
+  <div class="container">
+    <div>
+       <FlatWidget
+          v-for="flat in flats"
+          :key="flat.id"
+          :icon="flat.icon"
+          :images="flat.images"
+          :address="flat.address"
+          :price="flat.price"
+          :title="flat.title"
+          :description="flat.description"
+        />
+    </div>
   </div>
+</section>
+
 </template>
 
 
 <style>
-.flats-list {
-  display: flex;
-  flex-wrap: wrap;
+
+.section-accordion{
+  /* max-width: 50rem; */
+  /* margin-inline: auto; */
+  background-color: var(--color-gray);
+  /* padding-inline: 1rem; */
 }
 </style>

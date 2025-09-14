@@ -1,22 +1,26 @@
 [
     {
       "id": 1,
+      "icon": "celebration",
       "images": [
         "../../src/assets/img/landscapes/IMG_20231027_120212.jpg",
         "../../src/assets/img/landscapes/IMG_20231022_094040.jpg"
       ],
       "address": "123 Main Street, Cityville",
       "price": 1200,
+      "title": "2.5-Zimmer Wohnung direkt am Bahnhof",
       "description": "A cozy 2-bedroom flat in the heart of the city."
     },
     {
       "id": 2,
+      "icon": "communication",
       "images": [
         "../../src/assets/img/landscapes/IMG_20231022_094040.jpg",
         "../../src/assets/img/landscapes/IMG_20231027_120212.jpg"
       ],
       "address": "456 Side Street, Townville",
       "price": 900,
+      "title": "1.5-Zimmer Wohnung direkt am Bahnhof",
       "description": "Quiet and affordable 1-bedroom flat with a nice view."
     }
   ]
