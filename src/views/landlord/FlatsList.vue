@@ -5,13 +5,19 @@ import FlatWidget from './FlatWidget.vue';
 export default {
   name: 'FlatsList',
   components: { FlatWidget },
+  props: {
+    jsonPath: {
+      type: String,
+      required: true
+    }
+  },
   data() {
     return {
       flats: []
     };
   },
   mounted() {
-    fetch('/data/flats.json')
+    fetch(this.jsonPath)
       .then((res) => res.json())
       .then((data) => {
         this.flats = data;

@@ -1,44 +1,6 @@
-
-
-<template>
-<!-- shrink navigation at a certain scrollPoisition -->
-<header :class="{ 'scrolled-nav': scrollNav && !mobile }" > 
-  <nav class="container">
-      <transition name="fade">
-        <div class="branding" v-show="!mobile || mobileNav" >
-          <img src="./../assets/img/LogoTransparent (media).png" alt="Golden Logo on transparent background">
-        </div>
-      </transition>
-      <div class="navigation" v-show="!mobile">
-        <ul class="nav__list nav__list--primary">
-            <li class="nav__item"><a href="#" class="nav__link">Home</a></li>
-            <li class="nav__item"><a href="#" class="nav__link">Über mich</a></li>
-            <li class="nav__item"><a href="#" class="nav__link">Kontakt</a></li>
-        </ul>
-        <!-- <ul class="nav__list nav__list--secondary">
-            <li class="nav__item"><a href="#" class="nav__link">Sign In</a></li>
-            <li class="nav__item"><a href="#" class="nav__link nav__link--button">Sign up</a></li>
-        </ul> -->
-      </div>
-      <button class="nav-toggle" v-show="mobile" v-on:click="toggleMobileNav" :class="{ 'icon-active': mobileNav }">
-      <!-- <button class="nav-toggle" aria-label="open navigation" v-on:click="toggleNavigation"> -->
-        <span class="hamburger"></span>
-      </button>
-    
-      <transition name="mobile-nav" v-on:click="toggleMobileNav">
-          <ul class="dropdown-nav" v-show="mobileNav">
-              <li class="nav__item"><a href="#" class="nav__link">Home</a></li>
-              <li class="nav__item"><a href="#" class="nav__link">Über mich</a></li>
-              <li class="nav__item"><a href="#" class="nav__link">Kontakt</a></li>
-              <!-- <li class="nav__item"><a href="#" class="nav__link">Sign In</a></li> -->
-              <!-- <li class="nav__item"><a href="#" class="nav__link nav__link--button">Sign up</a></li> -->
-          
-          </ul>
-      </transition>
-    </nav>
-  </header>
-  
-</template>
+<script setup>
+import { RouterLink } from 'vue-router';
+</script>
 
 <script>
 
@@ -83,27 +45,59 @@
       },
     },
   };
-
-
-  // const navToggle = document.querySelector('.nav-toggle');
-  // const nav = document.querySelector('.nav');
-  // const logo = document.querySelector('.logo');
-
-  // console.log(navToggle);
-  // navToggle.addEventListener('click', () => {
-  //     nav.classList.toggle('nav--visible');
-  //     logo.classList.toggle('logo--visible');
-  // })
 </script>
 
+<template>
+  <!-- shrink navigation at a certain scrollPoisition -->
+<header :class="{ 'scrolled-nav': scrollNav }" > 
+  <nav class="container">
+      <transition name="fade">
+        <div class="branding" v-show="!mobile || mobileNav" >
+          <img src="./../assets/img/LogoTransparent (media).png" alt="Golden Logo on transparent background">
+        </div>
+      </transition>
+      <transition name="fade" class="navigation" v-show="!mobile">
+       <ul class="nav__list nav__list--primary">
+        <li class="nav__item"><RouterLink class="nav__link" to="/">Home</RouterLink></li>
+        <!-- <li class="nav__item"><RouterLink class="nav__link" to="/about">Über mich</RouterLink></li> -->
+        <li class="nav__item"><RouterLink class="nav__link" to="/property">Zu vermieten</RouterLink></li>
+        <!-- <li class="nav__item"><RouterLink class="nav__link" to="/datenschutz">Datenschutz</RouterLink></li>
+        <li class="nav__item"><RouterLink class="nav__link" to="/impressum">Impressum</RouterLink></li> -->
+      </ul>
+      <!-- <ul class="nav__list nav__list--secondary">
+            <li class="nav__item"><a href="#" class="nav__link">Sign In</a></li>
+            <li class="nav__item"><a href="#" class="nav__link nav__link--button">Sign up</a></li>
+        </ul> -->
+      </transition>
+      <button class="nav-toggle" v-show="mobile" v-on:click="toggleMobileNav" :class="{ 'icon-active': mobileNav }">
+      <!-- <button class="nav-toggle" aria-label="open navigation" v-on:click="toggleNavigation"> -->
+        <span class="hamburger"></span>
+      </button>
+    
+      <transition name="mobile-nav" v-on:click="toggleMobileNav">
+        <ul class="dropdown-nav" v-show="mobileNav">
+          
+          <li class="nav__item"><RouterLink class="nav__link" to="/">Home</RouterLink></li>
+          <!-- <li class="nav__item"><RouterLink class="nav__link" to="/about">Über mich</RouterLink></li> -->
+          <li class="nav__item"><RouterLink class="nav__link" to="/property">Zu vermieten</RouterLink></li>
+          <!-- <li class="nav__item"><RouterLink class="nav__link" to="/datenschutz">Datenschutz</RouterLink></li>
+          <li class="nav__item"><RouterLink class="nav__link" to="/impressum">Impressum</RouterLink></li> -->
+        </ul>
+      </transition>
+    </nav>
+  </header>
+</template>
 
-<style>
+
+<style scoped>
 header{
   display: flex;
   /* flex-direction: row; */
   justify-content: center;
-  /* background-color: var(--color-petrol-dark); */
-  padding: 0.5em 0;
+  align-items: center;
+  height: 80px;
+  background-color: var(--color-petrol-dark);
+  padding: 1em 0;
   /* text-align: center; */
   z-index: 99;
   width: 100%;
@@ -119,7 +113,8 @@ header{
 
 .branding{
   position: fixed;
-  left: 0;
+  left: 0px;
+  top: 10px;
   padding-left: 1em;
   z-index: 2;
 }
@@ -175,37 +170,7 @@ header nav {
   transition: 0.5s ease all;
   /* border: 1px solid red; */
 }
-/* @media(min-width: 1280px){
-  header nav {
-    max-width: 1280px;
-  }
-} */
 
-nav ul,a{
-  color: var(--color-gold);
-  list-style: none;
-  text-decoration: none;
-}
-
-nav li{
-  text-transform: uppercase;
-}
-nav a{
-  transition: 0.5s ease all;
-  border-bottom: 1px solid transparent;
-}
-
-.nav__item{
-  margin-top: 0.25em;
-}
-
-.nav__list{
-  display: flex;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  gap: 1rem;
-}
 .nav__list--secondary{
   /* margin: 0.75em 0; */
 }
@@ -264,7 +229,7 @@ nav a{
   /* border: 2px solid pink; */
   position: fixed;
   right: 2em;
-  top: 2em;
+  top: 1.5em;
 
   z-index: 2;
 }
@@ -364,26 +329,5 @@ a:hover.nav__link--button, a:focus.nav__link--button{
   width: 100%;
   left: 0;
 } 
-/* h1 {
-  font-weight: 500;
-  font-size: 2.6rem;
-  position: relative;
-  top: -10px;
-}
 
-h3 {
-  font-size: 1.2rem;
-}
-
-.greetings h1,
-.greetings h3 {
-  text-align: center;
-}
-
-@media (min-width: 1024px) {
-  .greetings h1,
-  .greetings h3 {
-    text-align: left;
-  }
-} */
 </style>
