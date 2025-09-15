@@ -59,7 +59,7 @@ import { RouterLink } from 'vue-router';
       <transition name="fade" class="navigation" v-show="!mobile">
        <ul class="nav__list nav__list--primary">
         <li class="nav__item"><RouterLink class="nav__link" to="/">Home</RouterLink></li>
-        <!-- <li class="nav__item"><RouterLink class="nav__link" to="/about">Über mich</RouterLink></li> -->
+        <li class="nav__item"><RouterLink class="nav__link" to="/about">Über mich</RouterLink></li>
         <li class="nav__item"><RouterLink class="nav__link" to="/property">Zu vermieten</RouterLink></li>
         <!-- <li class="nav__item"><RouterLink class="nav__link" to="/datenschutz">Datenschutz</RouterLink></li>
         <li class="nav__item"><RouterLink class="nav__link" to="/impressum">Impressum</RouterLink></li> -->
@@ -78,7 +78,7 @@ import { RouterLink } from 'vue-router';
         <ul class="dropdown-nav" v-show="mobileNav">
           
           <li class="nav__item"><RouterLink class="nav__link" to="/">Home</RouterLink></li>
-          <!-- <li class="nav__item"><RouterLink class="nav__link" to="/about">Über mich</RouterLink></li> -->
+          <li class="nav__item"><RouterLink class="nav__link" to="/about">Über mich</RouterLink></li>
           <li class="nav__item"><RouterLink class="nav__link" to="/property">Zu vermieten</RouterLink></li>
           <!-- <li class="nav__item"><RouterLink class="nav__link" to="/datenschutz">Datenschutz</RouterLink></li>
           <li class="nav__item"><RouterLink class="nav__link" to="/impressum">Impressum</RouterLink></li> -->

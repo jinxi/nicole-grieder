@@ -46,6 +46,7 @@ section{
 
 ul.inside{
   list-style-position: inside;
+  padding-bottom: 1em;
 }
 
 
