@@ -6,7 +6,7 @@
         <div class="container">
             <p class="intro__text">Willkommen auf</p>
             <!-- <h1 class="intro__title">Responsive layouts don’t<br>have to be a struggle</h1> -->
-            <img src="./../assets/img/WebLogoGriederHomes_Immobe.png" alt="Grieder Homes die persönliche Immobilienbewirtschaftung in der Region Liestal" >
+            <img src="./../assets/img/WebLogoGriederHomes_Immobe.png" alt="Grieder Homes die persoenliche Immobilienbewirtschaftung in der Region Liestal" >
         </div>
     </section>
 
@@ -15,16 +15,8 @@
             <h1 class="section-title section-title--dark">News</h1>
             <div class="row">
                 <div class="col">
-                    <p>Die Seite ist im Aufbau. Aber einige Teile sind schon bereit.</p>
-                    <p>Hier eine überarbeitet Version, die etwas über mich und Grieder-Homes Immobilienbewirtschaftung erzählt. <span><a class="link--button --dark" alt="Grieder Homes Immobilienbewirtschaftung durch Nicole Grieder" target="_top"><RouterLink to="/about-grieder-homes-immobilienbewirtschaftung">Über mich</RouterLink></a></span></p>
-                    <p>Und hier finden sie die 1. Version meiner Angebote. <span><a class="link--button --dark" alt="Grieder Homes Immobilienbewirtschaftung und Immobilienbewirtschaftungs Tool" target="_top"><RouterLink to="/services-and-products">Dienstleistungen</RouterLink></a></span></p>
-                    <p>Aktuell bin ich daran, das Bewirtschaftungs Tool zu verbessern und die Seite mit den Objekten die Zuvermieten sind aufzubauen.</p>
-                  </div>
-                <!-- <div class="col seperator_mobile">
-                <p>Hier finden sie die 1. Version meiner Angebote.</p>
-                  <span><a class="link--button --dark" target="_top"><RouterLink to="/services-and-products">Dienstleistungen</RouterLink></a></span>
-                
-                </div> -->
+                    <p>Der Teil dieser Website ist im Aufbau. Bitte um etwas Geduld.</p>
+                </div>
             </div>
         </div>
     </section>

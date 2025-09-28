@@ -36,7 +36,7 @@ import { RouterLink } from 'vue-router';
       },
       checkScreen(){
         this.windowWith = window.innerWidth;
-        if(this.windowWith <= 900){
+        if(this.windowWith <= 1200){
           this.mobile = true;
           return;
         }
@@ -53,16 +53,15 @@ import { RouterLink } from 'vue-router';
   <nav class="container">
       <transition name="fade">
         <div class="branding" v-show="!mobile || mobileNav" >
-          <img src="./../assets/img/LogoTransparent (media).png" alt="Golden Logo on transparent background">
+          <img src="./../assets/img/WebLogoGriederHomes (media).png" alt="Grieder Homes Immobilienbewirtschaftung">
         </div>
       </transition>
       <transition name="fade" class="navigation" v-show="!mobile">
        <ul class="nav__list nav__list--primary">
-        <li class="nav__item"><RouterLink class="nav__link" to="/">Home</RouterLink></li>
-        <li class="nav__item"><RouterLink class="nav__link" to="/about">Über mich</RouterLink></li>
-        <li class="nav__item"><RouterLink class="nav__link" to="/property">Zu vermieten</RouterLink></li>
-        <!-- <li class="nav__item"><RouterLink class="nav__link" to="/datenschutz">Datenschutz</RouterLink></li>
-        <li class="nav__item"><RouterLink class="nav__link" to="/impressum">Impressum</RouterLink></li> -->
+        <li class="nav__item"><RouterLink class="nav__link" alt="Grieder Homes Immobilienbewirtschaftung im Baselland und Argau" to="/">Home</RouterLink></li>
+        <li class="nav__item"><RouterLink class="nav__link" alt="Grieder Homes Immobilienbewirtschaftung durch Nicole Grieder" to="/about-grieder-homes-immobilienbewirtschaftung">Über mich</RouterLink></li>
+        <li class="nav__item"><RouterLink class="nav__link" alt="Grieder Homes Immobilienbewirtschaftung und Immobilienbewirtschaftungs Tool" to="/services-and-products">Dienstleistung</RouterLink></li>
+        <li class="nav__item"><RouterLink class="nav__link" alt="Mietwohnungen, Parkplätze und Lagerräum in Liestal und Kaiseraugst" to="/underConstruction">Zu vermieten</RouterLink></li>
       </ul>
       <!-- <ul class="nav__list nav__list--secondary">
             <li class="nav__item"><a href="#" class="nav__link">Sign In</a></li>
@@ -77,12 +76,11 @@ import { RouterLink } from 'vue-router';
       <transition name="mobile-nav" v-on:click="toggleMobileNav">
         <ul class="dropdown-nav" v-show="mobileNav">
           
-          <li class="nav__item"><RouterLink class="nav__link" to="/">Home</RouterLink></li>
-          <li class="nav__item"><RouterLink class="nav__link" to="/about">Über mich</RouterLink></li>
-          <li class="nav__item"><RouterLink class="nav__link" to="/property">Zu vermieten</RouterLink></li>
-          <!-- <li class="nav__item"><RouterLink class="nav__link" to="/datenschutz">Datenschutz</RouterLink></li>
-          <li class="nav__item"><RouterLink class="nav__link" to="/impressum">Impressum</RouterLink></li> -->
-        </ul>
+          <li class="nav__item"><RouterLink class="nav__link" alt="Grieder Homes Immobilienbewirtschaftung im Baselland und Argau" to="/">Home</RouterLink></li>
+          <li class="nav__item"><RouterLink class="nav__link" alt="Grieder Homes Immobilienbewirtschaftung durch Nicole Grieder" to="/about-grieder-homes-immobilienbewirtschaftung">Über mich</RouterLink></li>
+          <li class="nav__item"><RouterLink class="nav__link" alt="Grieder Homes Immobilienbewirtschaftung und Immobilienbewirtschaftungs Tool" to="/services-and-products">Dienstleistung</RouterLink></li>
+          <li class="nav__item"><RouterLink class="nav__link" alt="Mietwohnungen, Parkplätze und Lagerräum in Liestal und Kaiseraugst" to="/underConstruction">Zu vermieten</RouterLink></li>
+         </ul>
       </transition>
     </nav>
   </header>
