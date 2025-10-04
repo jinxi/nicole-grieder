@@ -142,10 +142,6 @@ header{
   padding: 0.2em 0;
 }
 
-.scrolled-nav nav .branding img{
-  /* width: 40px; */
-  /* box-shadow: 0 4px 6px -1px rgbga(0,0,0,0.1), 0 2px 4px -1px rgba(0,0,0,0.06); */
-}
 
 .navigation{
   display: flex;
@@ -169,9 +165,6 @@ header nav {
   /* border: 1px solid red; */
 }
 
-.nav__list--secondary{
-  /* margin: 0.75em 0; */
-}
 
 .dropdown-nav {
   display: flex;
@@ -286,15 +279,6 @@ header nav {
 .hamburger::after {
   transform: translateY(3px);
 }
-
-
-
-a:link, a:visited, a:hover, a:active{  /* use nav__link */}
-
-/* .nav__link{
-  color: var(--color-gold);
-  text-decoration: none;
-} */
 
 a:hover, a:focus{
   opacity: 0.85;
