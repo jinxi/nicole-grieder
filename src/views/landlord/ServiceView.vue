@@ -21,7 +21,7 @@
             <p>Sehr gerne mache ich die Bewirtschaftung von Mehrfamilienhäusern die im 10km-Umkreis von Liestal liegen.</p>
             <p>Die Art der Bewirtschaftung ist sehr persönlich. Daher versuche ich passende Bewerberinnen und Bewerber zu finden, die sowohl zu den bestehenden Mieterinnen und Mieter passen, aber auch mit helfen die Immobilie gepflegt und schön zu halten. </p>
             <p>Mieterinnen und Mieter sind immer willkommen in Kontakt mit mir zutreten. Sie können mich telefonisch, per Mail aber auch über Whatsapp erreichen. </p>
-            <p>In regelmässigen Intervallen besuche ich die Liegenschaften, um sicher zugehen, dass alles in Ordnung ist, aber auch um den Kontakt zu halten, den zufriedene Mieter bleiben lange.</p>
+            <p>In regelmässigen Intervallen besuche ich die Liegenschaften, um sicher zugehen, dass alles in Ordnung ist, aber auch um den Kontakt zu halten, denn zufriedene Mieter bleiben lange.</p>
             
             <h2>Bewirtschaftungstool und Anpassungen</h2>
             <p>Da ich mir für meine Liegenschaften ein passendes Tool zur Bewirtschaftung zusammen gestellt habe (mit Notion), dass untenstehende Feautres bereits beinhaltet, biete ich dieses Toolset auch gerne anderen Bewirtschafterinnen und Bewirtschafter. Dabei biete ich auch gerne Anpassungen/Erweitern an.</p>

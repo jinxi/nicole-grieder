@@ -21,7 +21,7 @@
               </p>
               <p>Im 2023 habe ich die Ausbildung <a href="https://lifetrust-coach.com/" target="_blank">"Life Trust Coach"</a> von Veit Lindau mit all den 12 Prüfungen erfolgreich abgeschlossen.
               </p>
-              <p>Im 2026 beginne ich den die Ausbildung zur Immobilienbewirtschafterin der <a href="https://www.svit.ch/de/education/fa-immobilienbewirtschaftung" target="_blank">SVIT</a>.</p>
+              <p>Im 2026 beginne ich die Ausbildung zur Immobilienbewirtschafterin der <a href="https://www.svit.ch/de/education/fa-immobilienbewirtschaftung" target="_blank">SVIT</a>.</p>
               <p>Ich bin eine sehr motivierte Allrounderin, sowohl Kauffrau als auch Ingenieurin, die Coaching Ausbildung für das Zwischenmenschliche mit Mietern, Behörden etc. und zum Abschluss die Immobilienbewirtschafterin, um bestehendes Wissen zu festigen und Neues zu lernen.</p>
             </div>
           </div>
