@@ -21,11 +21,17 @@
         Bei Interesse gerne über die oben angeführte E-Mail kontakt aufnehmen.
     </p>
       <h1 class="section-title section-title--dark">Logo</h1>
-       <p>Kiki Kiremidijan (AT) <br>Bei Interesse stelle ich gerne den Kontakt her.
-    </p>
-    
+       <p>Kiki Kiremidijan (AT) <br>Bei Interesse stelle ich gerne den Kontakt her.</p>
+
+      <h1 class="section-title section-title--dark">Banner Design</h1>       
+       <p>Nino <a href="https://so-zi.net/">Soda Zitron Media</a>  <br>Bei Interesse stelle ich gerne den Kontakt her.</p>
+
+       
+      <h1 class="section-title section-title--dark">Baufragen und Interio Design</h1>       
+       <p>Vanessa <a href="https://vanruhtenberg.com/">Vanruhtenberg</a>  <br>Bei Interesse stelle ich gerne den Kontakt her.</p>
+      
       <h1 class="section-title section-title--dark">Haftung für Inhalte</h1>
-      <p>Als Diensteanbieter trage ich die Verantwortung für die eigenen Inhalte auf diesen Seiten gemäss den allgemeinen Gesetzen. Ich bin jedoch nicht verpflichtet, übermittelte oder gespeicherte fremde Informationen zu überwachen oder nach Umständen zu forschen, die auf eine rechtswidrige Tätigkeit hinweisen könnten. Verpflichtungen zur Entfernung oder Sperrung der Nutzung von Informationen gemäss den allgemeinen Gesetzen bleiben davon unberührt. Eine Haftung in diesem Zusammenhang ist jedoch erst ab dem Zeitpunkt der Kenntnis einer konkreten Rechtsverletzung möglich. Bei Bekanntwerden entsprechender Rechtsverletzungen werde ich die betreffenden Inhalte unverzüglich entfernen.
+       <p>Als Diensteanbieter trage ich die Verantwortung für die eigenen Inhalte auf diesen Seiten gemäss den allgemeinen Gesetzen. Ich bin jedoch nicht verpflichtet, übermittelte oder gespeicherte fremde Informationen zu überwachen oder nach Umständen zu forschen, die auf eine rechtswidrige Tätigkeit hinweisen könnten. Verpflichtungen zur Entfernung oder Sperrung der Nutzung von Informationen gemäss den allgemeinen Gesetzen bleiben davon unberührt. Eine Haftung in diesem Zusammenhang ist jedoch erst ab dem Zeitpunkt der Kenntnis einer konkreten Rechtsverletzung möglich. Bei Bekanntwerden entsprechender Rechtsverletzungen werde ich die betreffenden Inhalte unverzüglich entfernen.
     </p>
     
       <h1 class="section-title section-title--dark">Haftung für Links</h1>
