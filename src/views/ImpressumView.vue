@@ -27,7 +27,7 @@
        <p>Nino <a href="https://so-zi.net/">Soda Zitron Media</a>  <br>Bei Interesse stelle ich gerne den Kontakt her.</p>
 
        
-      <h1 class="section-title section-title--dark">Baufragen und Interio Design</h1>       
+      <h1 class="section-title section-title--dark">Baufragen und Interior Design</h1>       
        <p>Vanessa <a href="https://vanruhtenberg.com/">Vanruhtenberg</a>  <br>Bei Interesse stelle ich gerne den Kontakt her.</p>
       
       <h1 class="section-title section-title--dark">Haftung für Inhalte</h1>
