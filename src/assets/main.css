@@ -43,6 +43,9 @@ section{
 .text--light{
   color: var(--color-gold-light);
 }
+.text--dark{
+  color: var(--color-gold);
+}
 
 ul.inside{
   list-style-position: inside;

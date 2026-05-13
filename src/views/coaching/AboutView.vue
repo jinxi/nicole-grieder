@@ -21,8 +21,8 @@
               </p>
               <p>Im 2023 habe ich die Ausbildung <a href="https://lifetrust-coach.com/" target="_blank">"Life Trust Coach"</a> von Veit Lindau mit all den 12 Prüfungen erfolgreich abgeschlossen.
               </p>
-              <p>Im 2026 beginne ich die Ausbildung zur Immobilienbewirtschafterin der <a href="https://www.svit.ch/de/education/fa-immobilienbewirtschaftung" target="_blank">SVIT</a>.</p>
-              <p>Ich bin eine sehr motivierte Allrounderin, sowohl Kauffrau als auch Ingenieurin, die Coaching Ausbildung für das Zwischenmenschliche mit Mietern, Behörden etc. und zum Abschluss die Immobilienbewirtschafterin, um bestehendes Wissen zu festigen und Neues zu lernen.</p>
+              <p>Im 2026 begann ich die Ausbildung zur Immobilienbewirtschafterin der <a href="https://www.svit.ch/de/education/fa-immobilienbewirtschaftung" target="_blank">SVIT</a>.</p>
+              <p>Ich bin eine sehr motivierte Allrounderin, sowohl Kauffrau als auch Ingenieurin, die Coaching Ausbildung für das Zwischenmenschliche mit Mietern, Behörden, Lieferanten etc. und zum Abschluss die Immobilienbewirtschafterin, um bestehendes Wissen zu festigen und Neues zu lernen.</p>
             </div>
           </div>
         </div>
@@ -34,10 +34,10 @@
         <div class=" seperator_mobile text--light">
           <h1 class="section-title section-title--dark">Wie bin ich in die Immobilienbranche gerutscht?</h1>
           <p>Alles hat mit der Renovation meines 1. Hauses (2016/2017) angefangen, bei der ich praktisch alles mit Freunden und Bekannten plante und umsetzte. Dabei lernte ich sehr viel über das Herz (Umbau von Oel auf Gas mit Wärmepumpe) des Hauses, zudem die Elektrik (ersetzen und erweitern der Leitungen und Dosen), Statik (ein paar Wände mussten fallen) und vieles mehr.<br>
-            Dann der Verkauf, mein 1. Kontakt mit einer Maklerfreundin, die mir durch die Behoerdenhürden half (ich lebte damals in Österreich).</p>
+            Dann der Verkauf, mein 1. Kontakt mit einer Maklerfreundin, die mir durch die Behördenhürden half (ich lebte damals in Österreich).</p>
           <p>Dann das Renovieren meines 2. Hauses (2023), ein neues Herzsystem (Fernwärme mit Bodenheizung) kennen lernen.</p>
-          <p>Das Verwalten und teil-renovieren meines eigenen Wohnhauses mit 6 Einheiten (2024).</p>
-          <p>Gründung meiner eigenen Firma Grieder-Homes, sowie das Verwalten eines weiteren Wohnhauses mit 9 Einheiten für meine 1. Kundin (2025).</p>
+          <p>Das Verwalten und Teil-renovieren meines eigenen Wohnhauses (2024).</p>
+          <p>Gründung meiner eigenen Firma Grieder-Homes, sowie das Verwalten weiterer Wohnhäuser (2025-).</p>
         </div>
     </div>
   </section>
